@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BLOSSOM ACCOUNT WORKFLOW</title>
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+</head>
+<body>
+  <div id="main" class="nist-main">
+    <h1>Account Management Workflow</h1>
+    <p>
+        This document explains the workflow of GitHub actions used to automate Blossom service's 
+        accounts management, found <a href="https://github.com/usnistgov/blossom-oscal/tree/main/.github/workflows">here</a>
+    </p>
+    
+    <h2>Requirements to run Actions</h2>
+    <ul>
+        <li>Repository secrets: AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_REGION, AWS_BUCKET</li>
+        <li>Issue labels: ACCOUNT_REQUEST_RECORD, ACCOUNT_APPROVED, ACCOUNT_REJECTED, ACCOUNT_IMPLEMENTED</li>
+    </ul>
+    
+    <h2>Account Request and Creation</h2>
+    <ol>
+        <li>The requester requests an account for the Account Holder by creating a new GitHub issue using the <a href="https://github.com/usnistgov/blossom-oscal/issues/new/choose">Account Request Form.</a></li>
+        <li>The Blossom Management group is automatically notified to review the request through GitHub.</li>
+        <li>One of the Blossom Management (a member of the Blossom Management group) reviews the request and adds a new label to the issue: ACCOUNT_APPROVED or ACCOUNT_REJECTED</li>
+        <li>If ACCOUNT_REJECTED, the account request issue is automatically closed.</li>
+        <li>If the account is approved and the label ACCOUNT_APPROVED is added, the Blossom Sysdevs group is automatically notified about implementation.</li>
+        <li>A YAML file is automatically created from information submitted through the Account Request Form, which is pushed to the GitHub repo as a new branch and a condensed version is sent to S3 bucket.</li>
+        <li>S3 bucket receives the file about the new user to create and sends a trigger to EC2, which implements the new user in Cognito, SSM, ACL, AMB as necessary.</li>
+        <li>The new user is inserted into the SSP, which is pushed into the GitHub repo to the new branch.</li>
+        <li>Upon completion of creating the account requested, a Pull Request is automatically created, to link the branch with the Account Request issue.</li>
+        <li>Upon merging the Pull Request that implements the account, the relevant updated controls are re-assessed automatically. The Blossom Assessors group is then notified to monitor the automated assessment.</li>
+        <li>TBD: STEPS FOR AUTOMATED ASSESSMENT</li>
+    </ol>
+    
+    <h2>Account Disable</h2>
+    <p>
+        [TBD]
+    </p>
+    
+    <h2>Account Enable</h2>
+    <p>
+        [TBD]
+    </p>
+    
+    <h2>Account Change</h2>
+    <p>
+        [TBD]
+    </p>
+    
+    <h2>Account Deletion</h2>
+    <p>
+        [TBD]
+    </p>
+  </div>
+</body>
+</html>
