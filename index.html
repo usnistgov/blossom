@@ -80,10 +80,16 @@
       <a href=mailto:blossom@nist.gov>blossom@nist.gov</a>
     </p>
   </div>
-  <p class="font-sans-sm text-center" style="margin:1.5rem auto">This page was last updated on August 27, 2024. <button
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("result").innerHTML = "This page was last updated on : " + lastModifiedDate;
+ </script>
+  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
-      class="usa-button usa-button--accent-cool">Improve this Page</button></p>
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
   <script type=text/javascript src=../js/site.min.js
     integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
   <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
