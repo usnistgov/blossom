@@ -80,12 +80,13 @@
       <a href=mailto:blossom@nist.gov>blossom@nist.gov</a>
     </p>
   </div>
+  <div id = "updated"></div>
   <script>
     var date = document.lastModified;
     var lastModifiedDate = new Date(date);
-    document.getElementById("result").innerHTML = "This page was last updated on : " + lastModifiedDate;
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
  </script>
-  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+ <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>
