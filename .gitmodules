@@ -1,0 +1,15 @@
+[submodule "blossom-member"]
+	path = blossom-member
+	url = git@github.com:usnistgov/blossom-member.git
+[submodule "blossom-oscal"]
+	path = blossom-oscal
+	url = git@github.com:usnistgov/blossom-oscal.git
+[submodule "blossom-dashboard"]
+	path = blossom-dashboard
+	url = git@github.com:usnistgov/blossom-dashboard.git
+[submodule "blossom-chaincode"]
+	path = blossom-chaincode
+	url = git@github.com:usnistgov/blossom-chaincode.git
+[submodule "blossom-sam"]
+	path = blossom-sam
+	url = git@github.com:usnistgov/blossom-sam.git
