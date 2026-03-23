@@ -19,7 +19,7 @@
     src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
 
   <script src="/assets/js/uswds-init.min.js"></script>
-  
+
   <link rel="stylesheet" href="/assets/css/uswds.min.css">
 </head>
 
@@ -27,19 +27,24 @@
   <div id="nav-main"></div>
 
   <div id="main" class="nist-main">
-    <h1>BloSS@M:</h1>
-    <h2>Blockchain-based Secure Software Assets Management</h2>
+    <div class="page-header">
+      <div class="page-header-text">
+        <h1>BloSS@M:</h1>
+        <h2>Blockchain-based Secure Software Assets Management</h2>
+      </div>
+    </div>
 
     <h3>WHAT IS BLOSS@M?</h3>
+    <img src="/assets/images/blossom_overview.png" alt="Blossom Overview"></img>
     <p>
-      The goal of the Blockchain Secure Software Assets Management (BloSS@M) project 
-      is to demonstrate, through a proof of concept application, the applicability 
-      of permission-based distributed ledger system to sharing software assets 
+      The goal of the Blockchain Secure Software Assets Management (BloSS@M) project
+      is to demonstrate, through a proof of concept application, the applicability
+      of permission-based distributed ledger system to sharing software assets
       at the US Government level, in support of the
-      President’s Management Agenda (PMA) and the Quality Service Management Offices (QSMO).
+      President's Management Agenda (PMA) and the Quality Service Management Offices (QSMO).
     </p>
     <p>
-      The proposed approach allows USG to establish a service for all interested agencies, 
+      The proposed approach allows USG to establish a service for all interested agencies,
       of leasing software assets for the period of time the asset is needed and return the
       asset to the pool managed by the USG service.
     </p>
@@ -47,19 +52,19 @@
     <ul>
       <li>the upwards aggregation of software assets acquisition at USG level,
         and</li>
-      <li>downwards distribution of necessary software assets only for 
-        the period of time the asset is in use, sharing and recycling in this way 
+      <li>downwards distribution of necessary software assets only for
+        the period of time the asset is in use, sharing and recycling in this way
         the software assets among different USG departments and agencies.
     </ul>
     <p>Additionally, the project aims to demonstrate that the
       blockchain-based system created to address the PMA meets the Federal Information System
-      Management Act (FISMA) requirements ib an automated fashion.
+      Management Act (FISMA) requirements in an automated fashion.
     </p>
-    <p>A large percentage of the assessment and authorization (A&A) process 
+    <p>A large percentage of the assessment and authorization (A&A) process
       is leveraging the <a href="https://www.nist.gov/OSCAL">Open Security Controls Assessment Language (OSCAL)</a>
-      to ease the system’s Authorization to Operate (ATO) and to support continuous monitoring process.
-      </p>
-      <p>The outcome of the BloSS@M project, will be an implementation of a fully decentralized,
+      to ease the system's Authorization to Operate (ATO) and to support continuous monitoring process.
+    </p>
+    <p>The outcome of the BloSS@M project, will be an implementation of a fully decentralized,
       intrusion-tolerant software assets management system leveraging multiple novel techniques
       (e.g., permission-based blockchains, SWID tag, NGAC).
     </p>
@@ -67,41 +72,8 @@
       The permission-based blockchain system has unique properties, including high throughput and
       scalability and modular design and implementation.
     </p>
-    
-    <h2>Project Phases</h2>
-    <UL>
-      <li>Phase 1: Implementing the Next Generation Access Control (NGAC) in the chaincode for the Amazon Managed Blockchain.</li>
-      <li>Phase 2: Implementing A&A automation and continuous Authorization to Operate (ATO) proof of concept.</li>
-      <li>Phase 3: Implementing a proof of concept for leasing and managing securely software assets.</li>
-    </UL>
-
-    <h2>Repositories</h2>
-    <li><a href=https://github.com/usnistgov/blossom>blossom</a></li>
-    <li><a href=https://github.com/usnistgov/blossom-chaincode>blossom-chaincode</a> Phase 1 - completed.</li>
-    <li><a href=https://github.com/usnistgov/blossom-nist-member>blossom-member</a> (currently named
-      blossom-nist-member). Phase 2 - under development.</li>
-    <li><a href=https://github.com/usnistgov/sam>sam</a></li>
-
-    <h2>Project Documentation</h2>
-    <li><a href="https://github.com/usnistgov/blossom-nist-member/wiki/A-Federal-Blockchain%E2%80%90based-Secure-Software-Assets-Management-(BloSS@M)-Solution#a-blockchain-based-secure-software-assets-management-blossm-solution">BloSS@M Problem Statement and Proposed Solution</a></li>
-    <li><a href="https://github.com/usnistgov/blossom-nist-member/wiki/BloSS@M--%E2%80%90-Authorization-Chaincode-Functions">Blossom Authorization Chaincode</a></li>
-    <li><a href="https://github.com/usnistgov/blossom-nist-member/wiki/BloSS@M-ATO-Process">BloSS@M ATO Process</a></li>
-    <li><a href="https://github.com/usnistgov/blossom-nist-member/wiki/BloSS@M:-Asset-Channel-Design">BloSS@M Asset Channel Design</a></li>
-
-    <h2>Project Demo</h2>
-    
-    <h3>Demo Documentation</h3>
-    <li><a href="./documentation/demo/account_workflow.html">Overview of user account management automation with GitHub Actions</a></li>
-
-    <h3>Demo</h3>
-    <li><a href="https://github.com/usnistgov/blossom-oscal/issues/new?assignees=&labels=ACCOUNT_REQUEST_RECORD&projects=&template=account_management_request_form.yaml">Register Users</a></li>
-
-    <h2>Contact Us</h2>
-    <p>For questions or suggestions and constructive criticism, please contact the team at:
-      <a href=mailto:blossom@nist.gov>blossom@nist.gov</a>
-    </p>
   </div>
-  <div class="center-text" id="updated" ></div>
+  <div class="center-text" id="updated"></div>
 
   <script src="/assets/js/load-nav.js"></script>
   <script src="/assets/js/uswds.min.js"></script>
@@ -111,9 +83,8 @@
     var date = document.lastModified;
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
- </script>
- <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
-      id=main-improve-page
+  </script>
+  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>
   </p>

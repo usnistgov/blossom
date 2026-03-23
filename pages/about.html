@@ -19,7 +19,7 @@
     src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
 
   <script src="/assets/js/uswds-init.min.js"></script>
-  
+
   <link rel="stylesheet" href="/assets/css/uswds.min.css">
 </head>
 
@@ -27,9 +27,41 @@
   <div id="nav-main"></div>
 
   <div id="main" class="nist-main">
-    <p>PAGE PLACEHOLDER</p>
+    <div class="page-header">
+      <div class="page-header-text">
+        <h1>ABOUT BLOSS@M</h1>
+      </div>
+    </div>
+
+    <p>BloSS@M focuses on a coordinated approach for managing software assets across U.S. Government agencies. Rather
+      than relying on independent, agency-specific procurement and license management processes. The BloSS@M model
+      explores a software leasing service in which blockchain technology is used to record software asset lifecycle
+      information and to support the controlled distribution of software usage rights to authorized users. </p>
+
+    <p>The BloSS@M model is intended to address long-standing challenges associated with fragmented software
+      procurement, cost, and license management, including limited visibility into software acquisition and usage across
+      agencies. By supporting shared visibility and coordinated management, the proposed solution seeks to enable
+      improved asset accountability, more informed contract negotiations, and enhanced software supply chain risk
+      management. Blockchain technology is used to support these objectives in environments where participating
+      departments, agencies, vendors, and publishers may not fully trust one another.</p>
+
+    <img src="/assets/images/blossom_overview_3D.png" alt="Blossom Overview 3D"></img>
+
+    <p>BloSS@M's permissioned blockchain requires two distinct private channels, each governed by its own set of smart
+      contracts which implements NGAC:
+    <ul>
+      <li>Authorization channel: Dedicated to the assessment and authorization (A&A) process, where peer nodes prove and
+        continuously maintain their security posture in line with the Federal Information Security Modernization Act
+        (FISMA)</li>
+      <li>Assets channel: Focused on the core business functions of BloSS@M, supporting the implementation of its
+        operational and technical capabilities.</li>
+    </ul>
+    The authorization channel supports automated security assessments, member authorization, and continuous Authority
+    to Operate (ATO) requirements. Meanwhile, the asset channel supports BloSS@M services and its core capabilities,
+    allowing users to discover, compare and securely lease licenses for software assets, and to manage such assets
+    during their use time. </p>
   </div>
-  <div class="center-text" id="updated" ></div>
+  <div class="center-text" id="updated"></div>
 
   <script src="/assets/js/load-nav.js"></script>
   <script src="/assets/js/uswds.min.js"></script>
@@ -39,9 +71,8 @@
     var date = document.lastModified;
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
- </script>
- <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
-      id=main-improve-page
+  </script>
+  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>
   </p>
