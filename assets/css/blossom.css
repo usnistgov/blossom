@@ -1,0 +1,49 @@
+.usa-button--accent-cool {
+  color: #1b1b1b;
+  background-color: #00bde3;
+}
+
+.center-text {
+  color: blue;
+  text-align: center;
+}
+
+.page-header {
+  background-color: #163e64;
+  width: 100vw;            
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0px 14px 8px rgba(0, 0, 0, 0.23); 
+}
+
+.page-header-text{
+  color: white;
+  font-weight: bold;
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+
+.contact-page-content{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.message-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.email{
+  background-color: rgb(118, 167, 247);
+  padding: 10px;
+  border-radius: 100px;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+

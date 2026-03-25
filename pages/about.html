@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>NIST BLOSSOM</title>
+  <title>ABOUT</title>
 
   <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
   <meta name="docsearch:language" content="None" />
@@ -29,49 +29,37 @@
   <div id="main" class="nist-main">
     <div class="page-header">
       <div class="page-header-text">
-        <h1>BloSS@M:</h1>
-        <h2>Blockchain-based Secure Software Assets Management</h2>
+        <h1>ABOUT BLOSS@M</h1>
       </div>
     </div>
 
-    <h3>WHAT IS BLOSS@M?</h3>
-    <img src="/assets/images/blossom_overview.png" alt="Blossom Overview"></img>
-    <p>
-      The goal of the Blockchain Secure Software Assets Management (BloSS@M) project
-      is to demonstrate, through a proof of concept application, the applicability
-      of permission-based distributed ledger system to sharing software assets
-      at the US Government level, in support of the
-      President's Management Agenda (PMA) and the Quality Service Management Offices (QSMO).
-    </p>
-    <p>
-      The proposed approach allows USG to establish a service for all interested agencies,
-      of leasing software assets for the period of time the asset is needed and return the
-      asset to the pool managed by the USG service.
-    </p>
-    <p>Such service will allow for:</p>
+    <p>BloSS@M focuses on a coordinated approach for managing software assets across U.S. Government agencies. Rather
+      than relying on independent, agency-specific procurement and license management processes. The BloSS@M model
+      explores a software leasing service in which blockchain technology is used to record software asset lifecycle
+      information and to support the controlled distribution of software usage rights to authorized users. </p>
+
+    <p>The BloSS@M model is intended to address long-standing challenges associated with fragmented software
+      procurement, cost, and license management, including limited visibility into software acquisition and usage across
+      agencies. By supporting shared visibility and coordinated management, the proposed solution seeks to enable
+      improved asset accountability, more informed contract negotiations, and enhanced software supply chain risk
+      management. Blockchain technology is used to support these objectives in environments where participating
+      departments, agencies, vendors, and publishers may not fully trust one another.</p>
+
+    <img src="/assets/images/blossom_overview_3D.png" alt="Blossom Overview 3D"></img>
+
+    <p>BloSS@M's permissioned blockchain requires two distinct private channels, each governed by its own set of smart
+      contracts which implements NGAC:
     <ul>
-      <li>the upwards aggregation of software assets acquisition at USG level,
-        and</li>
-      <li>downwards distribution of necessary software assets only for
-        the period of time the asset is in use, sharing and recycling in this way
-        the software assets among different USG departments and agencies.
+      <li>Authorization channel: Dedicated to the assessment and authorization (A&A) process, where peer nodes prove and
+        continuously maintain their security posture in line with the Federal Information Security Modernization Act
+        (FISMA)</li>
+      <li>Assets channel: Focused on the core business functions of BloSS@M, supporting the implementation of its
+        operational and technical capabilities.</li>
     </ul>
-    <p>Additionally, the project aims to demonstrate that the
-      blockchain-based system created to address the PMA meets the Federal Information System
-      Management Act (FISMA) requirements in an automated fashion.
-    </p>
-    <p>A large percentage of the assessment and authorization (A&A) process
-      is leveraging the <a href="https://www.nist.gov/OSCAL">Open Security Controls Assessment Language (OSCAL)</a>
-      to ease the system's Authorization to Operate (ATO) and to support continuous monitoring process.
-    </p>
-    <p>The outcome of the BloSS@M project, will be an implementation of a fully decentralized,
-      intrusion-tolerant software assets management system leveraging multiple novel techniques
-      (e.g., permission-based blockchains, SWID tag, NGAC).
-    </p>
-    <p>
-      The permission-based blockchain system has unique properties, including high throughput and
-      scalability and modular design and implementation.
-    </p>
+    The authorization channel supports automated security assessments, member authorization, and continuous Authority
+    to Operate (ATO) requirements. Meanwhile, the asset channel supports BloSS@M services and its core capabilities,
+    allowing users to discover, compare and securely lease licenses for software assets, and to manage such assets
+    during their use time. </p>
   </div>
   <div class="center-text" id="updated"></div>
 
