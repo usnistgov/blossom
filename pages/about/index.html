@@ -21,6 +21,103 @@
   <script src="../../assets/js/uswds-init.min.js"></script>
 
   <link rel="stylesheet" href="../../assets/css/uswds.min.css">
+<style>
+    /* Custom styles for About page only */
+    .about-content img{
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    }
+    .channel-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .channel-list li {
+      background: #f8f9fa;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-left: 4px solid #06425e;
+      border-radius: 0 7px 7px 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .channel-list li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px #06425e;
+    }
+    .channel-list li strong {
+      color: #06425e;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Card layout for challenges and benefits */
+    .challenges-grid, .benefits-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+      justify-content: center;
+    }
+
+    .challenge-card, .benefit-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .challenge-card:hover, .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px #06425e;
+    }
+
+    .challenge-card h4, .benefit-card h4 {
+      color: #06425e;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    .challenge-card p, .benefit-card p {
+      color: #555;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .challenges-grid, .benefits-grid {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .challenge-card, .benefit-card {
+        flex: 1 1 100%;
+      }
+    }
+
+    .about-content h3 {
+      text-align: center;
+      color: #06425e;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .challenge-section {
+      background: linear-gradient(to bottom, #0b30414a, #ffffff);
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    .benefits-section {
+      background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,39 +125,77 @@
 
   <div id="main" class="nist-main">
     <div class="page-header">
-      <div class="page-header-text">
-        <h1>ABOUT BLOSS@M</h1>
-      </div>
+      <div class="page-header-text">ABOUT BLOSS@M</div>
     </div>
 
-    <p>BloSS@M focuses on a coordinated approach for managing software assets across U.S. Government agencies. Rather
-      than relying on independent, agency-specific procurement and license management processes. The BloSS@M model
-      explores a software leasing service in which blockchain technology is used to record software asset lifecycle
-      information and to support the controlled distribution of software usage rights to authorized users. </p>
+    <div class="about-content">
+      <div>
+        <br>
+        <div class="challenge-section">
+        <p>BloSS@M focuses on a coordinated approach for managing software assets across U.S. Government agencies. Rather
+          than relying on independent, agency-specific procurement and license management processes. The BloSS@M model
+          explores a software leasing service in which blockchain technology is used to record software asset lifecycle
+          information and to support the controlled distribution of software usage rights to authorized users. </p>
 
-    <p>The BloSS@M model is intended to address long-standing challenges associated with fragmented software
-      procurement, cost, and license management, including limited visibility into software acquisition and usage across
-      agencies. By supporting shared visibility and coordinated management, the proposed solution seeks to enable
-      improved asset accountability, more informed contract negotiations, and enhanced software supply chain risk
-      management. Blockchain technology is used to support these objectives in environments where participating
-      departments, agencies, vendors, and publishers may not fully trust one another.</p>
+        <h3>Challenges Addressed</h3>
+        <p>The BloSS@M model tackles long-standing challenges in government software management:</p>
 
-    <img src="../../assets/images/blossom_overview_3D.png" alt="Blossom Overview 3D"></img>
+        <div class="challenges-grid">
+          <div class="challenge-card">
+            <h4>🔧 Fragmented Processes</h4>
+            <p>Eliminates fragmented agency-specific procurement and license management</p>
+          </div>
+          <div class="challenge-card">
+            <h4>👁️ Limited Visibility</h4>
+            <p>Provides shared visibility into software acquisition and usage across agencies</p>
+          </div>
+          <div class="challenge-card">
+            <h4>🔒 Trust Limitations</h4>
+            <p>Uses blockchain technology to support coordination where participating departments, agencies, vendors, and publishers may not fully trust one another</p>
+          </div>
+        </div>
+        </div>
 
-    <p>BloSS@M's permissioned blockchain requires two distinct private channels, each governed by its own set of smart
+        <div class="benefits-section">
+          <p>By enabling shared visibility and coordinated management, BloSS@M seeks to support:</p>
+          <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4>📊 Improved Accountability</h4>
+            <p>Better tracking and responsibility for software assets</p>
+          </div>
+          <div class="benefit-card">
+            <h4>📝 Better Negotiations</h4>
+            <p>More informed contract discussions with vendors</p>
+          </div>
+          <div class="benefit-card">
+            <h4>🛡️ Enhanced Risk Management</h4>
+            <p>Stronger software supply chain security oversight</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br><br>
+      <img src="../../assets/images/blossom_overview_3D.png" alt="Blossom Overview 3D">
+    </div>
+
+    <br><br>
+
+    <p>BloSS@M's permissioned blockchain requires <strong>two distinct private channels</strong>, each governed by its own set of smart
       contracts which implements NGAC:
-    <ul>
-      <li>Authorization channel: Dedicated to the assessment and authorization (A&A) process, where peer nodes prove and
+    </p>
+    <ul class="channel-list">
+      <li><strong>Authorization Channel:</strong> Dedicated to the assessment and authorization (A&A) process, where peer nodes prove and
         continuously maintain their security posture in line with the Federal Information Security Modernization Act
-        (FISMA)</li>
-      <li>Assets channel: Focused on the core business functions of BloSS@M, supporting the implementation of its
-        operational and technical capabilities.</li>
+        (FISMA). <p>The authorization channel supports automated security assessments, member authorization, and continuous Authority
+        to Operate (ATO) requirements. </li>
+      <li><strong>Assets Channel:</strong> Focused on the core business functions of BloSS@M, supporting the implementation of its
+        operational and technical capabilities. <p> The asset channel supports BloSS@M services and its core capabilities,
+        allowing users to discover, compare and securely lease licenses for software assets, and to manage such assets
+        during their use time.</p></li>
     </ul>
-    The authorization channel supports automated security assessments, member authorization, and continuous Authority
-    to Operate (ATO) requirements. Meanwhile, the asset channel supports BloSS@M services and its core capabilities,
-    allowing users to discover, compare and securely lease licenses for software assets, and to manage such assets
-    during their use time. </p>
   </div>
+  <br><br>
+  
   <div class="center-text" id="updated"></div>
 
   <script src="../../assets/js/load-nav.js"></script>
