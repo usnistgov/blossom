@@ -21,6 +21,97 @@
   <script src="../../assets/js/uswds-init.min.js"></script>
 
   <link rel="stylesheet" href="../../assets/css/uswds.min.css">
+  <style>
+    /* Custom styles for Get Involved page */
+    .get-involved-intro {
+      background: linear-gradient(135deg, #06425e4c 0%, #f0f8ff 100%);
+      padding: 2.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      border-top: 4px solid #06425e;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .nist-main h3 {
+      text-align: center;
+      color: #0b3041;
+    }
+
+    .get-involved-intro h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .get-involved-intro p {
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      margin: 0;
+    }
+
+    .get-involved-intro:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .repository-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    .repository-list li {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      margin: 1rem 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-left: 4px solid #06425e;
+    }
+
+    .repository-list li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .repository-list li a {
+      color: #06425e;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .repository-list li span[style*="white-space: nowrap"] a {
+      display: inline;
+    }
+
+    .repository-list li a:hover {
+      text-decoration: underline;
+    }
+
+    .repository-list li p {
+      margin: 0.5rem 0 0 0;
+      color: #555;
+      line-height: 1.5;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+
+    .ecosystem-section {
+      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,30 +121,49 @@
     <div class="page-header">
       <div class="page-header-text">GET INVOLVED</div>
     </div>
-    <p>To get started with adapting blossom to your needs, go to the <a
-        href="https://github.com/usnistgov/blossom">blossom</a> repository on GitHub.​</p>
-    <p>
-      This repository contains submodules for the different aspects of blossom. Depending on your specific needs, you
-      may use any, all, or none of these repositories. You may also fork the repositories to customize to your needs.
-      See below for descriptions of the submodules. </p>
+    <div class="get-involved-intro">
+      <h3>Help Shape the Future of BloSS@M</h3>
+      <p>Whether you want to join the network, build new integrations, contribute code, or customize Blossom for your organization
+        there's a place for you in the project. Explore the repositories below to get started, collaborate with the community, and help grow the Blossom ecosystem.
+      </p>
+    </div>
 
     <img src="../../assets/images/submodules_light.png" alt="Submodules Diagram"></img>
 
-    <ul>
-      <li><a href="https://github.com/usnistgov/blossom-member">blossom-member</a> - to join the chain</li>
+    <br><br>
+    <div class="ecosystem-section">
+      <h2 class="text-center">Explore the BloSS@M Ecosystem</h2>
+      <p>The Blossom ecosystem is organized into focused repositories designed for different use cases and roles.</p>
+      <p>Start with the main <a href="https://github.com/usnistgov/blossom">blossom</a> repository to access the core platform and its related submodules. Each repository
+        can be used independently or together depending on your organization's needs, and all components are open for extension and
+        customization through forking and contribution.
+      </p>
+      <br>
+      <h4 class="text-center">Click on and browse the repositories below to find the best place to get involved.</h4>
+      <ul class="repository-list">
+        <li>
+          <a href="https://github.com/usnistgov/blossom-member">blossom-member</a>
+          <p>Tools and configuration for those that want to join an existing Blossom network as a participating member.</p>
+        </li>
 
-      <li><a href="https://github.com/usnistgov/blossom-oscal">blossom-oscal</a> - for OSCAL content that supports
-        blossom, such as user management automation, assessment</li>
+        <li>
+          <a href="https://github.com/usnistgov/blossom-oscal">blossom-oscal</a>
+          <p>OSCAL-based content, automation, and supporting resources used by Blossom for assessments, user management, and compliance workflows.</p>
+        </li>
 
-      <li><a href="https://github.com/usnistgov/blossom-dashboard">blossom-dashboard</a> - a dashboard to query and view
-        users on the chain</li>
+        <li>
+          <a href="https://github.com/usnistgov/blossom-dashboard">blossom-dashboard</a>
+          <p>A dashboard for viewing network activity, exploring chain data, and managing or searching participating users.</p>
+        </li>
 
-      <li><a href="https://github.com/usnistgov/blossom-chaincode">blossom-chaincode</a> and <a
-          href="https://github.com/usnistgov/blossom-sam">blossom-sam</a> - to deploy your own chain, rather than
-        joining</li>
-    </ul>
+        <li>
+          <span style="display: inline-block; white-space: nowrap;"><a href="https://github.com/usnistgov/blossom-chaincode">blossom-chaincode</a>&nbsp;and&nbsp;<a href="https://github.com/usnistgov/blossom-sam">blossom-sam</a></span>
+          <p>Resources for those that want to deploy and manage their own Blossom blockchain network instead of joining an existing one.</p>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="center-text" id="updated"></div>
+  <div class="text-center" id="updated"></div>
 
   <script src="../../assets/js/load-nav.js"></script>
   <script src="../../assets/js/uswds.min.js"></script>
