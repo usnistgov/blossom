@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Use Case Examples</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
+
+  <style>
+    .use-cases-header {
+      background: linear-gradient(135deg, rgba(6, 66, 94, 0.03) 0%, rgba(0, 189, 227, 0.02) 100%);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--nist-accent);
+    }
+
+    .use-cases-header h1 {
+      color: var(--nist-blue);
+      margin-top: 0;
+    }
+
+    .use-cases-header p {
+      color: var(--gray-dark);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .use-cases-section {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin: 2rem 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .use-cases-section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      border-color: rgba(0, 189, 227, 0.2);
+    }
+
+    .use-cases-section-title {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, rgba(6, 66, 94, 0.03) 0%, rgba(0, 189, 227, 0.02) 100%);
+      padding: 1.5rem 2rem;
+      color: var(--nist-blue);
+      font-size: 1.5rem;
+      font-weight: 600;
+      border-bottom: none;
+      gap: 1rem;
+    }
+
+    .use-cases-section-number {
+      background: var(--nist-accent);
+      color: white;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .use-cases-section-icon {
+      font-size: 1.75rem;
+      flex-shrink: 0;
+    }
+
+    .use-cases-section-content {
+      padding: 2rem;
+    }
+
+    .use-cases-section-content p {
+      color: var(--gray-dark);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .use-cases-section-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .use-cases-section-content strong {
+      color: var(--nist-blue);
+    }
+
+    .use-cases-section-content em {
+      color: var(--gray-dark);
+      font-style: italic;
+    }
+
+    .use-cases-section:nth-child(even) {
+      background: linear-gradient(180deg, var(--white) 0%, rgba(6, 66, 94, 0.01) 100%);
+    }
+
+    .use-cases-section:nth-child(odd) {
+      background: var(--white);
+    }
+
+    @media (max-width: 768px) {
+      .use-cases-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      .use-cases-section-content {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .use-cases-section-title {
+        padding: 1.25rem 1.5rem;
+      }
+
+      .use-cases-section-number {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .use-cases-section-icon {
+        font-size: 1.5rem;
+      }
+
+      .use-cases-section-title {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">USE CASE EXAMPLES</div>
+    </div>
+
+    <section class="intro-section">
+      <h1>BloSS@M Use Case Example Walkthrough</h1>
+      <p>
+        Learn about how a federal agency might apply BloSS@M capabilities across the software asset lifecycle, from identification through risk-informed decision-making.
+      </p>
+    </section>
+
+    <div class="page-content-flex">
+      <aside id="sidenav-main"></aside>
+
+      <div class="main-content">
+        <div class="use-cases-header">
+          <h1>Federal Software Acquisition Use Case</h1>
+          <p>
+            Follow along as a federal agency uses BloSS@M to evaluate, select, and manage a commercial off-the-shelf (COTS) software solution throughout its lifecycle.
+          </p>
+        </div>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">1</div>
+            <div class="use-cases-section-icon">📋</div>
+            <div>Overview of Use Case Example</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              A federal organization needs to acquire a commercial off-the-shelf (COTS) software product to perform a critical mission activity, such as data analysis and reporting.
+              Several comparable solutions are already in use across government agencies, but they vary in pricing structures, licensing approaches, and security features. The organization's
+              objective is to identify the option that best satisfies operational requirements while reducing both overall expenditures and potential cybersecurity vulnerabilities.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">2</div>
+            <div class="use-cases-section-icon">🔍</div>
+            <div>Asset Discovery and Initial Filtering</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              Through BloSS@M, the agency searches the enterprise software inventory to locate solutions that satisfy established operational requirements and policy constraints.
+              The platform generates a set of eligible software options available under the enterprise leasing framework, including applications that have already been licensed and deployed by other federal organizations.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">3</div>
+            <div class="use-cases-section-icon">💰</div>
+            <div>Evaluating the Asset's Cost and Leasing</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              For every software option identified, BloSS@M provides details on licensing arrangements and related leasing costs. The agency reviews and compares anticipated
+              expenses across alternatives while assessing opportunities to reallocate or extend existing leased licenses, helping to avoid unnecessary purchases and streamline acquisition efforts.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">4</div>
+            <div class="use-cases-section-icon">🔒</div>
+            <div>Security Configuration and Control Review</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              The agency assesses the security characteristics of each potential software solution by examining its associated OSCAL Component Definition artifacts. These standardized
+              artifacts document the security controls implemented within each product, allowing the agency to compare security features across options and determine how well they satisfy
+              organizational security and compliance requirements.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">5</div>
+            <div class="use-cases-section-icon">⚠️</div>
+            <div>Analyzing for Vulnerabilities and Threats</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              BloSS@M automatically links each prospective software product to the latest vulnerability data available from the NVD. At the same time, the platform enriches the assessment
+              with threat intelligence by correlating documented security controls to applicable MITRE ATT&CK techniques and related MITRE D3FEND countermeasures. This combined analysis
+              enables the agency to compare the relative risk exposure and defensive capabilities of the available software options.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">6</div>
+            <div class="use-cases-section-icon">🤖</div>
+            <div>AI-Assisted Provisional Assessment</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              Using consolidated information on security configurations, known vulnerabilities, and relevant threat intelligence, BloSS@M produces an AI-assisted preliminary evaluation
+              for each candidate software asset. The evaluation highlights potential security concerns, identifies areas where controls may be insufficient, and assesses the extent to which
+              implemented safeguards address recognized adversary tactics and defensive practices. These outputs are intended to support decision-making and risk analysis, rather than serve
+              as official authorization or compliance documentation.
+            </p>
+          </div>
+        </section>
+
+        <section class="use-cases-section">
+          <div class="use-cases-section-title">
+            <div class="use-cases-section-number">7</div>
+            <div class="use-cases-section-icon">📊</div>
+            <div>Selection and Ongoing Monitoring</div>
+          </div>
+          <div class="use-cases-section-content">
+            <p>
+              Drawing on the cost, capability, and security insights generated by BloSS@M, the agency chooses the software solution that most effectively satisfies its operational objectives,
+              financial constraints, and cybersecurity needs. After implementation, BloSS@M remains engaged throughout the asset's lifecycle by overseeing license utilization, identifying newly
+              reported vulnerabilities, and continuously updating threat correlations and mitigation information as external intelligence sources change over time.
+            </p>
+            <p>
+              BloSS@M leverages SWID tags—standardized, machine-readable identifiers that capture software product details such as version, edition, patch level, and lifecycle events including
+              installation, updates, and removal—to provide continuous visibility into license allocation and usage. Through this capability, organizations can monitor software deployment and
+              removal activities across their environments, confirm that updates and security patches have been applied, and verify that software instances have been properly uninstalled before
+              leased licenses are returned to the BloSS@M license pool. By integrating SWID tag information with licensing agreements, configuration requirements, and security posture data,
+              organizations can maintain accurate software inventories, improve license compliance, and ensure that deployed applications remain current, supported, and secure.
+            </p>
+            <p>
+              In addition, BloSS@M's asset leasing and traceability capabilities enhance accountability, governance, and continuous authorization efforts by delivering near-real-time insight
+              into software lifecycle events and system state changes through a standardized, automatable framework. This functionality enables organizational stakeholders to access reliable evidence
+              for audit and compliance activities while allowing BloSS@M service providers to maintain an accurate and up-to-date inventory of software licenses available across the enterprise.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+  </script>
+  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+  <script type=text/javascript src=../../../assets/js/site.min.js
+    integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), $("a.usa-link--external").leaveNotice() })</script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js
+    integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ=="
+    crossorigin=anonymous></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+</body>
+
+</html>

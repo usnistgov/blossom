@@ -1,0 +1,123 @@
+<style>
+    .resources-sidebar {
+      background-color: var(--white);
+      border-right: 1px solid #e0e0e0;
+      padding: 1.5rem;
+      height: fit-content;
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    .resources-sidebar-header {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--nist-blue);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--nist-accent);
+    }
+
+    .resources-sidebar-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-nav li {
+      margin-bottom: 0.5rem;
+    }
+
+    .resources-sidebar-nav a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      text-decoration: none;
+      color: var(--gray-dark);
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .resources-sidebar-nav a:hover {
+      background-color: var(--light-bg);
+      color: var(--nist-blue);
+    }
+
+    .resources-sidebar-nav a.active {
+      background-color: var(--nist-accent);
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .resources-sidebar-nav a.active:hover {
+      background-color: #00a7cc;
+    }
+
+    /* Styles for nested sub-navigation */
+    .resources-sidebar-nav ul {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+      list-style: none;
+    }
+
+    .resources-sidebar-nav ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    .resources-sidebar-nav ul a {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+
+    .resources-sidebar-nav ul a:hover {
+      opacity: 1;
+      background-color: var(--light-bg);
+      color: var(--nist-blue);
+    }
+
+    .resources-sidebar-nav ul a.active {
+      background-color: var(--nist-accent);
+      color: var(--white);
+      font-weight: 600;
+      opacity: 1;
+    }
+
+    @media (min-width: 768px) {
+      .resources-sidebar {
+        width: 250px;
+        flex-shrink: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .resources-sidebar {
+        margin-bottom: 2rem;
+      }
+    }
+</style>
+
+<aside class="resources-sidebar">
+  <div class="resources-sidebar-header">Resources</div>
+  <ul class="resources-sidebar-nav">
+
+    <li>
+      <a href="{{BASE_URL}}pages/resources/business-layer/index.html">Business Layer</a>
+      <ul>
+        <li><a href="{{BASE_URL}}pages/resources/swid/index.html">Software Identification Tags (SWID)</a></li>
+        <li><a href="{{BASE_URL}}pages/resources/asset-security/index.html">Asset Security</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="{{BASE_URL}}pages/resources/ato-layer/index.html">ATO Layer</a>
+      <ul>
+        <li><a href="{{BASE_URL}}pages/resources/ngac/index.html">Next Generation Access Control (NGAC)</a></li>
+        <li><a href="{{BASE_URL}}pages/resources/onboarding-process/index.html">Onboarding Process</a></li>
+      </ul>
+    </li>
+    <li><a href="{{BASE_URL}}pages/resources/oscal/index.html">OSCAL</a></li>
+    <li><a href="{{BASE_URL}}pages/resources/blossom-ir/index.html">Blossom Internal Report</a></li>
+    <li><a href="{{BASE_URL}}pages/resources/use-cases/index.html">Use Case Examples</a></li>
+  </ul>
+</aside>

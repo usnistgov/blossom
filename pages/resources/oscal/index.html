@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OSCAL</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" -->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css" />
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+  
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css" />
+
+  <style>
+    .usa-button--accent-cool:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+      background-color: #009ec5;
+      transition: all 0.2s ease;
+    }
+
+    .accordion {
+      margin: 1rem 0;
+    }
+    .accordion details {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .accordion summary {
+      padding: 0.75rem 1rem;
+      background-color: #f8f9fa;
+      cursor: pointer;
+      font-weight: 600;
+      outline: none;
+    }
+    .accordion summary:hover {
+      background-color: #e9ecef;
+    }
+    .accordion details[open] summary {
+      background-color: #e3f2fd;
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion p {
+      padding: 0 1rem 1rem;
+      color: #555;
+      background-color: white;
+      margin: 0;
+      padding-top: 15px;
+      line-height: 1.5;
+    }
+    
+    .layout-container,
+    .main-content,
+    .content-section,
+    .section-content {
+      overflow: visible !important;
+    }
+    
+    .accordion details[open] {
+      overflow: visible;
+    }
+    .hover-image {
+      border-radius: 8px;
+      border: 2px solid #009ec5;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .hover-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    
+    .section-content.bg-white {
+      background-color: white;
+    }
+    
+    .section-content.shadow {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">OSCAL</div>
+    </div>
+      <section class="intro-section">
+        <h1>Open Security Controls Assessment Language (OSCAL)</h1>
+        <p>
+          An open-source, machine-readable language that digitizes security information to enable automated, continuous risk management.
+          OSCAL streamlines assessments, improves accuracy, and makes compliance documentation portable, standardized, and scalable.
+        </p>
+      </section>
+
+      <div class="layout-container">
+        <aside id="sidenav-main"></aside>
+      
+        <div class="main-content">
+          <section class="content-section">
+              <h2 class="section-title">What is OSCAL?</h2>
+            <div class="section-content">
+              <p>
+                As organizations increasingly operate within highly connected digital environments, traditional cybersecurity compliance approaches are becoming harder to manage.
+                Manual processes, document-heavy workflows, and proprietary tools often create inefficiencies and make it difficult to share, reuse, and analyze security information.
+                The growing complexity of system relationships and inherited controls further increases the challenge of understanding security postures and managing risks.
+                <br /><br />  
+                To address these challenges, the National Institute of Standards and Technology (NIST), in collaboration with industry partners developed the
+                <strong>Open Security Controls Assessment Language (OSCAL)</strong>, which is a collection of standardized, machine-readable models for capturing and
+                exchanging cybersecurity and privacy information throughout the system lifecycle. It provides a consistent way to represent security
+                controls, implementations, assessment findings, and authorization documentation using formats such as JSON, XML, and YAML. This standardized
+                approach enables greater automation, interoperability, faster assessments, continuous monitoring, and reuse of security data across tools, organizations, and compliance workflows.
+                <br /><br />
+                <div class="text-center">
+                  <p><a href="https://www.nist.gov/OSCAL" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Visit OSCAL's Official Website</a></p>
+                </div>
+            </div>
+          </section>
+
+
+          <div class="section-divider"></div>
+
+          <section class="oscal-models-section">
+            <h2 class="section-title">OSCAL Models</h2>
+            <div class="section-content">
+                <p>OSCAL defines a suite of eight machine-readable models that collectively support the end-to-end automation of security control selection, implementation, assessment, and authorization.
+                  Below lists the current 8 models:
+                </p>
+
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Catalog Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Provides a structured representation of security controls and control enhancements.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Profile Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Supports the tailoring and composition of control baselines.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Component Definition Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Describes reusable system components and the controls they implement.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Assessment Plan Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Documents system-specific control implementations.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Assessment Results Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Captures the outcomes of security assessments.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Plan of Action and Milestones (POA&M) Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Tracks identified risks and remediation activities.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header"><strong>Control Mapping Model</strong></button>
+                    <div class="accordion-content">
+                      <p>Allows for documenting the alignment between requirements and controls from different regulatory frameworks or versions of the same framework with mathematical precision.</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <img class="hover-image" src="../../../assets/images/oscal_layers_diagram.png" alt="OSCAL Layers and Models Diagram">
+                <p>Collectively, these 8 models facilitate consistent information sharing, outgoing security oversight, and automated authorization processes that support implementation of the NIST Risk Management Framework (RMF) and compliance with FISMA requirements.</p>  
+                <div class="text-center">
+                  <p><a href="https://pages.nist.gov/OSCAL/learn/concepts/layer/" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More About OSCAL's Models & Layers</a></p>
+                </div>
+            </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="oscal-and-blossom">
+            <h2 class="section-title">OSCAL & BloSS@M</h2>
+              <div class="section-content">
+                <p>
+                  In the BloSS@M architecture, OSCAL provides a core framework for encoding, maintaining, and exchanging authoritative cybersecurity information related to software assets and the infrastructure that supports them. Comparable security data can also be produced for
+                  hardware and firmware components managed through centralized asset acquisition and lifecycle management services. In addition, OSCAL enhances visibility into asset-specific security configurations as provided by software vendors, while supporting automated security
+                  assessments and continuous Authorization to Operate (ATO) activities consistent with continuous risk management practices. To satisfy both FISMA obligations and BloSS@M Memorandum of Understanding requirements, the infrastructure operated by each BloSS@M participant
+                  is required to maintain a continuous ATO posture.
+                  <br><br>
+                  The adoption of OSCAL is recommended to enable standardized, interoperable, and automated exchanges of system security plans, control assessments, and authorization data, thereby supporting consistent FISMA compliance while preserving the agility required for a shared, multi-agency blockchain service. 
+                  <br><br>
+                  BloSS@M supports the comparative assessment of software assets with similar capabilities across agencies by bringing together cost, licensing, and security-related factors within a single management framework. Its security posture data is sourced from OSCAL's Component Definition
+                  artifacts, which document implemented security controls and configurations.
+                </p>
+
+                <div class="section-divider"></div>
+
+                <h3>Standardizing Software Security Information Through OSCAL's Component Definition</h3>
+                <p>BloSS@M leverages OSCAL <strong>Component Definition</strong> artifacts to consolidate information related to security configurations and implemented security controls. These artifacts provide structured, machine-readable representations of security controls and associated attributes for
+                  software assets, enabling a standardized approach to describing security implementations. As a result, organizations can perform automated and consistent assessments of software security posture across different products, platforms, and vendors.
+                  <br>
+                  Through the OSCAL Component Definition framework, vendors can generate artifacts that capture key security-related details, including cryptographic components, provenance information, implemented controls, and known vulnerabilities for software, firmware, and hardware assets.
+                  OSCAL's native extension capabilities also allow these artifacts to be associated with any selected Bill of Materials (BOM). For hardware and firmware acquisition scenarios supported by a BloSS@M styled service, OSCAL Component Definition artifacts can further include references
+                  to application-specific integrated circuit (ASIC) documentation, providing additional context and traceability for acquired assets.
+                </p>
+                <p>
+                  Component Definitions further support the composition of a <strong>System Security Plan (SSP)</strong> by enabling the reuse of component-level control implementation statements across systems. When developing an OSCAL SSP, organizations can reference and incorporate Component Definition artifacts 
+                  to describe how system elements—including software assets that are managed through BloSS@M—contribute to the overall system control implementation. This approach reduces duplication, improves consistency, and automatically updates system-level documentation to reflect component security information. 
+                </p>
+              </div>
+          </section>
+
+          <div class="section-divider"></div>
+
+          <section class="more-oscal-capabilities">
+            <h2 class="section-title" id="managing-secure-configuration-and-controls-satisfaction-with-oscal">Managing Secure Configuration and Controls Satisfaction with OSCAL </h2>
+              <div class="section-content">
+                <p>
+                  BloSS@M provides a security configuration and controls management capability that allows software vendors and asset providers to publish standardized security information in a machine-readable format. Using OSCAL Component Definition artifacts,
+                  organizations can document the security controls, safeguards, and configuration requirements associated with a software product or service in a consistent and interoperable manner.
+                  <br><br>
+                  By leveraging OSCAL Component Definitions, BloSS@M captures information about how security and privacy controls are implemented, as well as recommended configuration settings that help organizations meet specific security objectives. This approach supports
+                  greater transparency, simplifies the interpretation of vendor-provided security data, and enables integration with automated assessment, compliance, and authorization processes.
+                </p>
+                <div class="section-content bg-white shadow">
+                  <p>
+                    <strong>OSCAL Component Definition artifacts can include:</strong>
+                    <ul>
+                      <li>Information about the organization responsible for developing and maintaining the software asset.</li>
+                      <li>Key product details such as name, version, model, and modification history.</li>
+                      <li>Security and privacy controls supported or implemented by the asset.</li>
+                      <li>Configuration guidance and setting required to achieve desired security outcomes.</li>
+                      <li>Assessment procedures, validation methods, test scripts, or other mechanisms used to verify control implementation.</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="section-content bg-white shadow">
+                  <p>
+                    <strong>Within a Component Definition, individual components may be used to document and share: </strong>
+                    <ul>
+                      <li>Evidence of compliance with specific security requirements for hardware or software, such as the use of FIPS 140-2-validated cryptographic modules </li>
+                      <li>Information that describes how a hardware, software, or service offering implements or supports specific security or privacy controls </li>
+                      <li>Descriptions of policies or procedures that contribute to the implementation of security or privacy controls </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+          </section>
+
+      </div>
+    </div>
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+</script>
+ <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+  <script type="text/javascript" src="../../../assets/js/site.min.js" integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type="text/javascript" src="https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js"></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), $("a.usa-link--external").leaveNotice() })</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const headers = document.querySelectorAll('.accordion-header');
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          item.classList.toggle('active');
+          const content = item.querySelector('.accordion-content');
+          content.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

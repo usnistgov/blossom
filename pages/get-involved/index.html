@@ -69,13 +69,14 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       padding: 1.5rem;
       margin: 1rem 0;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       border-left: 4px solid #06425e;
     }
 
     .repository-list li:hover {
       transform: translateY(-3px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      background: #e6f7ff;
     }
 
     .repository-list li a {
@@ -99,10 +100,17 @@
       margin: 0.5rem 0 0 0;
       color: #555;
       line-height: 1.5;
+      text-align: left;
     }
-    
+
     .text-center {
       text-align: center;
+    }
+
+    .repository-list li span[style*="text-align: left"][style*="display: inline-block"] {
+      text-align: left !important;
+      display: block !important;
+      width: 100%;
     }
 
     .ecosystem-section {
@@ -123,8 +131,10 @@
     </div>
     <div class="get-involved-intro">
       <h3>Help Shape the Future of BloSS@M</h3>
-      <p>Whether you want to join the network, build new integrations, contribute code, or customize Blossom for your organization
-        there's a place for you in the project. Explore the repositories below to get started, collaborate with the community, and help grow the Blossom ecosystem.
+      <p>Whether you want to join the network, build new integrations, contribute code, or customize Blossom for your
+        organization
+        there's a place for you in the project. Explore the repositories below to get started, collaborate with the
+        community, and help grow the Blossom ecosystem.
       </p>
     </div>
 
@@ -134,8 +144,10 @@
     <div class="ecosystem-section">
       <h2 class="text-center">Explore the BloSS@M Ecosystem</h2>
       <p>The Blossom ecosystem is organized into focused repositories designed for different use cases and roles.</p>
-      <p>Start with the main <a href="https://github.com/usnistgov/blossom">blossom</a> repository to access the core platform and its related submodules. Each repository
-        can be used independently or together depending on your organization's needs, and all components are open for extension and
+      <p>Start with the main <a href="https://github.com/usnistgov/blossom">blossom</a> repository to access the core
+        platform and its related submodules. Each repository
+        can be used independently or together depending on your organization's needs, and all components are open for
+        extension and
         customization through forking and contribution.
       </p>
       <br>
@@ -143,22 +155,28 @@
       <ul class="repository-list">
         <li>
           <a href="https://github.com/usnistgov/blossom-member">blossom-member</a>
-          <p>Tools and configuration for those that want to join an existing Blossom network as a participating member.</p>
+          <p>Tools and configuration for those that want to join an existing Blossom network as a participating member.
+          </p>
         </li>
 
         <li>
           <a href="https://github.com/usnistgov/blossom-oscal">blossom-oscal</a>
-          <p>OSCAL-based content, automation, and supporting resources used by Blossom for assessments, user management, and compliance workflows.</p>
+          <p>OSCAL-based content, automation, and supporting resources used by Blossom for assessments, user management,
+            and compliance workflows.</p>
         </li>
 
         <li>
           <a href="https://github.com/usnistgov/blossom-dashboard">blossom-dashboard</a>
-          <p>A dashboard for viewing network activity, exploring chain data, and managing or searching participating users.</p>
+          <p>A dashboard for viewing network activity, exploring chain data, and managing or searching participating
+            users.</p>
         </li>
 
         <li>
-          <span style="display: inline-block; white-space: nowrap;"><a href="https://github.com/usnistgov/blossom-chaincode">blossom-chaincode</a>&nbsp;and&nbsp;<a href="https://github.com/usnistgov/blossom-sam">blossom-sam</a></span>
-          <p>Resources for those that want to deploy and manage their own Blossom blockchain network instead of joining an existing one.</p>
+          <span style="text-align: left; display: inline-block; white-space: nowrap;"><a
+              href="https://github.com/usnistgov/blossom-chaincode">blossom-chaincode</a>&nbsp;and&nbsp;<a
+              href="https://github.com/usnistgov/blossom-sam">blossom-sam</a></span>
+          <p>Resources for those that want to deploy and manage their own Blossom blockchain network instead of joining
+            an existing one.</p>
         </li>
       </ul>
     </div>
