@@ -51,7 +51,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Card layout for challenges and benefits */
     .challenges-grid, .benefits-grid {
       display: flex;
       flex-wrap: wrap;
@@ -75,17 +74,46 @@
       box-shadow: 0 6px 12px #06425e;
     }
 
-    .challenge-card h4, .benefit-card h4 {
+    .challenge-card h4, .benefit-card h4, .capability-card h4 {
       color: #06425e;
       margin-top: 0;
       margin-bottom: 0.75rem;
       font-size: 1.1rem;
     }
 
-    .challenge-card p, .benefit-card p {
+    .challenge-card p, .benefit-card p, .capability-card p {
       color: #555;
       line-height: 1.5;
       margin: 0;
+    }
+
+    .capabilities-section {
+      background: linear-gradient(to bottom, #e6f3ff, #ffffff);
+      padding: 2rem;
+      margin: 1.5rem 0;
+    }
+
+    .capabilities-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+      justify-content: center;
+    }
+
+    .capability-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #e0e0e0;
+    }
+
+    .capability-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px #06425e;
     }
 
     @media (max-width: 768px) {
@@ -116,6 +144,40 @@
       background: linear-gradient(to bottom, #ffffff, #f0f4f8);
       padding: 2rem;
       margin: 1.5rem 0;
+    }
+    .tagline {
+        text-align: center;
+        font-style: italic;
+        color: #06425e;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .description {
+        text-align: center;
+        color: #555;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .footer {
+        text-align: center;
+        color: #555;
+        margin-top: 2rem;
+        font-style: italic;
+    }
+
+    .capabilities-section > h4 {
+        text-align: center;
+        color: #06425e;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .capabilities-section h3 {
+        text-align: center;
+        color: #06425e;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -193,7 +255,53 @@
         allowing users to discover, compare and securely lease licenses for software assets, and to manage such assets
         during their use time.</p></li>
     </ul>
-  </div>
+
+    <br><br>
+        <div class="capabilities-section">
+          <h3>BloSS@M Capabilities</h3>
+          <p class="description">
+            BloSS@M brings a tamper-resistant, blockchain-backed approach to software asset management across U.S. Government agencies — unifying fragmented 
+            procurement, licensing, and security data into a single auditable framework.
+          </p>
+          <h4>What BloSS@M Delivers</h4>
+          <div class="capabilities-grid">
+            <div class="capability-card">
+              <h4>Immutable Asset Tracking</h4>
+              <p>Every software asset event (acquisition, deployment, update, retirement) is written to a distributed ledger. No single agency or vendor 
+                 owns the record. Any authorized party can verify and none can alter.</p>
+            </div>
+            <div class="capability-card">
+              <h4>Continuous Threat Correlation</h4>
+              <p>BloSS@M queries the NVD in real time and maps findings against MITRE ATT&CK techniques and MITRE D3FEND countermeasures. This 
+                 gives agencies an up-to-date picture of their exposure without manual research overhead.</p>
+            </div>
+            <div class="capability-card">
+              <h4>AI-Assisted Risk Assessment</h4>
+              <p>Agentic and generative AI runs provisional security assessments against implemented controls, surfacing control gaps and adversarial 
+                 alignment issues at a speed and scale no manual review process can match.</p>
+            </div>
+            <div class="capability-card">
+              <h4>OSCAL-Native Security Data</h4>
+              <p>Security control implementations are ingested as OSCAL Component Definition artifacts, which are machine-readable, interoperable, and directly 
+                 comparable across vendors and agencies. No inconsistent formats or manual translations required.</p>
+            </div>
+            <div class="capability-card">
+              <h4>Cross-Agency Software Comparison</h4>
+              <p>Cost, licensing terms, and security posture data are unified into one framework, enabling objective, evidence-based comparisons of 
+                 software tools serving similar functions across the federal enterprise.</p>
+            </div>
+            <div class="capability-card">
+              <h4>Shared Software Leasing Model</h4>
+              <p>Software licenses are treated as managed government resources. They are provisioned centrally and reassigned as mission needs shift. Agencies 
+                 get what they need and unused entitlements are left untouched.</p>
+            </div>
+          </div><br>
+          <p class="footer">
+            BloSS@M aligns with OMB Circular A-130, NIST SP 800-37 and 800-53, and recent Executive Order mandates on software supply chain security, 
+            satisfying compliance requirements while delivering operational value.
+          </p>
+        </div>
+      </div>
   <br><br>
   
   <div class="center-text" id="updated"></div>

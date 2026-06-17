@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Authorization Channel</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
+  <style>
+    .usa-button--accent-cool:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .nav-tab:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">ATO LAYER</div>
+    </div>
+
+    <section class="intro-section">
+      <h1>Authorization to Operate (ATO) Layer</h1>
+      <p>
+        The Authorization to Operate (ATO) Layer provides the trust framework that enables federal agencies to securely participate in the BloSS@M ecosystem. While BloSS@M uses blockchain technology to facilitate software asset sharing and lifecycle management, each participating agency remains responsible for the security and authorization of its own systems and information resources. Participation in the network does not transfer accountability for security, risk management, or compliance obligations.
+        The ATO Layer establishes a standardized approach for validating that all participating members meet required security controls, maintain an acceptable risk posture, and continuously demonstrate compliance throughout their participation in the network.
+      </p>
+    </section>
+
+    <div class="page-content-flex">
+      <aside id="sidenav-main"></aside>
+      <div class="main-content">
+        <!-- Related Pages Label -->
+        <div style="margin-bottom: 12px; font-weight: 600; color: #00bde3; text-align: center;">
+          Related Pages:
+        </div>
+        <!-- Navigation Tabs -->
+        <div class="navigation-tabs" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
+          <a href="../ngac/index.html" class="nav-tab" style="
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border: 1px solid #90caf9;
+            color: #0d47a1;
+            padding: 14px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            min-width: 150px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+          ">
+            NGAC Framework
+          </a>
+          <a href="../onboarding-process/index.html" class="nav-tab" style="
+            background: linear-gradient(135deg, #bbdefb, #90caf9);
+            border: 1px solid #64b5f6;
+            color: #0d47a1;
+            padding: 14px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            min-width: 150px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+          ">
+            Onboarding Process
+          </a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Why Authorization Matters in BloSS@M</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                BloSS@M is designed as a federated, multi-agency environment where software assets, security information, and operational data may be shared across organizational boundaries. Because federal agencies remain subject to FISMA requirements and NIST Risk Management Framework guidance, every participating member must be assessed and authorized before joining the network.
+                Traditional authorization approaches rely heavily on manual reviews, document exchanges, and periodic assessments. In a dynamic environment where members may join, leave, or modify their systems frequently, these processes become difficult to scale and can delay mission operations.
+                The ATO Layer addresses this challenge through automation, continuous monitoring, and machine-readable security artifacts that support timely and risk-informed authorization decisions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Continuous Authorization to Operate (C-ATO)</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                Rather than treating authorization as a periodic event, BloSS@M adopts a Continuous Authorization to Operate (C-ATO) approach.
+              </p>
+              <p>
+                Continuous ATO focuses on:
+              </p>
+              <ul style="padding-left: 1.5rem;">
+                <li>Ongoing assessment of implemented security controls</li>
+                <li>Continuous monitoring of system security posture</li>
+                <li>Automated collection of security evidence</li>
+                <li>Near-real-time risk determination</li>
+                <li>Continuous visibility into authorization status</li>
+              </ul>
+              <p>
+                This model enables participating agencies to maintain awareness of security risks as vulnerabilities emerge, configurations change, or threat conditions evolve. Instead of recreating authorization packages from scratch, updated security information can be exchanged and evaluated continuously.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">OSCAL: The Foundation of Security Automation</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                A key enabler of the BloSS@M ATO Layer is the Open Security Controls Assessment Language (OSCAL).
+              </p>
+              <p>
+                OSCAL is a NIST-developed framework that provides machine-readable formats for documenting, implementing, assessing, and monitoring security controls. It supports standardized representations using XML, JSON, and YAML formats, enabling security information to be exchanged and processed automatically.
+                Within BloSS@M, OSCAL is used to:
+              </p>
+              <ul style="padding-left: 1.5rem;">
+                <li>Exchange security documentation in a standardized format</li>
+                <li>Represent System Security Plans (SSPs)</li>
+                <li>Share assessment plans and assessment results</li>
+                <li>Track Plans of Action and Milestones (POA&Ms)</li>
+                <li>Support automated control assessments</li>
+                <li>Enable continuous monitoring activities</li>
+                <li>Provide machine-readable authorization evidence</li>
+              </ul>
+              <p>
+                By replacing manual document reviews with structured data, OSCAL helps reduce assessment effort, improve consistency, and support scalable authorization processes.
+              </p>
+              <div class="text-center">
+                <p><a href="../oscal/index.html" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn more about OSCAL</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Member Onboarding Requirements</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                Before joining the BloSS@M network, prospective members must demonstrate compliance with the security requirements established by the network governance model and onboarding Memorandum of Understanding (MOU).
+              </p>
+              <p>
+                Members are expected to:
+              </p>
+              <ul style="padding-left: 1.5rem;">
+                <li>Implement required security controls</li>
+                <li>Maintain a predefined security posture</li>
+                <li>Produce OSCAL-formatted security documentation</li>
+                <li>Submit evidence supporting their authorization status</li>
+                <li>Participate in ongoing monitoring activities</li>
+                <li>Maintain compliance throughout network participation</li>
+              </ul>
+              <p>
+                The onboarding process creates a consistent baseline for trust across all participating organizations while supporting scalable growth of the network.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Automated Assessments and Security Evidence</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                The BloSS@M ATO Layer relies on automation to evaluate and validate member security posture.
+              </p>
+              <p>
+                Security information is represented as OSCAL artifacts that can be automatically analyzed and reviewed. These artifacts may include:
+              </p>
+              <ul style="padding-left: 1.5rem;">
+                <li>System Security Plans (SSPs)</li>
+                <li>Assessment Plans</li>
+                <li>Assessment Results</li>
+                <li>Plans of Action and Milestones (POA&Ms)</li>
+                <li>Authorization evidence and attestations</li>
+              </ul>
+              <p>
+                The use of machine-readable security data enables centralized review, automated validation, ad-hoc auditing, and faster risk analysis while maintaining traceability of security decisions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Security Visibility Across the Network</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                BloSS@M leverages blockchain technology to provide a shared, tamper-evident environment for participating organizations. Blockchain technology creates an immutable record of transactions and events that can be independently verified by authorized participants.
+                Within the ATO Layer, this capability supports:
+              </p>
+              <ul style="padding-left: 1.5rem;">
+                <li>Traceable authorization activities</li>
+                <li>Auditable security evidence</li>
+                <li>Trusted attestation records</li>
+                <li>Shared visibility into member status</li>
+                <li>Improved accountability across participating organizations</li>
+              </ul>
+              <p>
+                This approach helps establish trust among members while preserving each agency's responsibility for managing its own security risks.
+              </p>
+              <div class="text-center">
+                <p><a href="../ngac/index.html" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn more about Blockchains and NGAC</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Benefits of the BloSS@M ATO Layer</h2>
+          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+              <p>
+                The ATO Layer enables BloSS@M to scale beyond traditional authorization approaches by providing:
+              </p>
+              <div class="policy-cards" style="margin-top: 1.5rem;">
+                <div class="policy-card">
+                  <h3>Standardization</h3>
+                  <p>Common security requirements and machine-readable documentation formats.</p>
+                </div>
+                <div class="policy-card">
+                  <h3>Automation</h3>
+                  <p>Reduced manual effort through automated assessment and validation processes.</p>
+                </div>
+                <div class="policy-card">
+                  <h3>Continuous Monitoring</h3>
+                  <p>Ongoing visibility into member security posture and control effectiveness.</p>
+                </div>
+                <div class="policy-card">
+                  <h3>Faster Risk Decisions</h3>
+                  <p>Near-real-time access to security information for authorization and governance decisions.</p>
+                </div>
+                <div class="policy-card">
+                  <h3>Auditability</h3>
+                  <p>Traceable and verifiable security evidence maintained throughout the system lifecycle.</p>
+                </div>
+                <div class="policy-card">
+                  <h3>Alignment with Federal Initiatives</h3>
+                  <p>Support for FISMA compliance, NIST Risk Management Framework practices, Zero Trust principles, and secure-by-design objectives.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+   </script>
+ <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+  <script type=text/javascript src=../../../assets/js/site.min.js
+    integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), ("a.usa-link--external").leaveNotice() })</script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js
+    integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ=="
+    crossorigin=anonymous></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+</body>
+
+</html>
