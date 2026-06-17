@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ASSET SECURITY</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">ASSET SECURITY</div>
+    </div>
+
+    <section class="intro-section">
+      <h1>ASSET SECURITY IN BLOSS@M</h1>
+        <p>
+          Asset security in BloSS@M focuses on protecting information assets from threats through a combination of technical controls, policies, and employee awareness. Learn how BloSS@M safeguards data, systems, and infrastructure to maintain confidentiality, integrity, and availability.
+        </p>
+    </section>
+
+    <div class="page-content-flex">
+      <aside id="sidenav-main"></aside>
+      <div class="main-content">
+        <section class="asset-security-intro">
+          <h2 class="section-title">Secure Configuration Using OSCAL</h2>
+          <div class="section-content">
+            <p>
+              BloSS@M provides a capability for capturing and communicating security configuration details and implemented security controls for software assets in a standardized, machine-readable format. Through this capability, software vendors and other asset providers can formally describe
+              the security protections incorporated into their products and demonstrate alignment with relevant regulatory, policy, and compliance requirements.
+            </p>
+            <p>
+              To facilitate interoperability and automation, BloSS@M leverages the OSCAL Component Definition model, which serves as a structured mechanism for expressing the security properities of reusable system components, including software products and services. The model enables providers to document
+              implemented controls, security capabilities, and other characteristics relevant to risk management and compliance activities.
+            </p>
+            <p>
+              Beyond identifying implemented safeguards, OSCAL Component Definitions can also capture secure deployment and configuration guidance. These specifications define configuration settings and operational considerations required to achieve particular security and privacy objectives. By consuming this standardized
+              information, organizations can more effectively integrate vendor-supplied security data into automated assessment, authorization, and continuous compliance processes while ensuring a consistent interpretation of asset security requirements.
+            </p>
+            <br>
+            <p class="highlight-box" style="text-align: center; background-color: #f0f8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #00bde3;">
+              This <a href="../oscal/index.html#managing-secure-configuration-and-controls-satisfaction-with-oscal">section</a> dives into more details about how the OSCAL Component Definition model is utilized with BloSS@M.
+            </p>
+          </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="asset-security-intro">
+          <h2 class="section-title">Operational Capabilities for Assets </h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Discovery</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    BloSS@M supports the enterprise-level discovery and visibility of software assets that are available for use across participating organizations. The model enables the identification of software products based on defined functional, contractual, or policy-based criteria to provide users with a consolidated view of available software
+                    assets. This capability supports inventory accuracy and reduces fragmentation caused by decentralized procurement and asset tracking practices. Asset discovery is a capability that could be extended to firmware and hardware assets acquisition, should an entity build and operate a centralized government-wide BloSS@M-like non-software assets acquisition service.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Asset License Cost Visibility</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Within BloSS@M, software license, subscription, and leasing costs supplied by publishers and vendors are maintained as part of the asset record and made accessible to authorized users. Associating financial information directly with software assets allows organizations to incorporate cost considerations into budgeting efforts,
+                    procurement strategies, and lifecycle management activities.
+                  </p>
+                  <p>
+                    The availability of standardized cost data supports more effective evaluation of comparable software products by enabling consistent price comparisons across competing offerings. This, in turn, helps decision-makers identify cost-effective solutions while improving transparency and accountability in enterprise software
+                    providing a consolidated view of software-related expenditures across the organization.
+                  </p>
+                  <p>An equivalent capability could be incorporated into a future hardware and firmware acquisition ecosystem. By capturing and exposing cost information for non-software assets, organizations would be able to compare similar hardware and firmware offerings using consistent financial criteria, while also strengthening enterprise-wide
+                    budgeting, investment planning, and fiscal governance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Comparison</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    BloSS@M enables the comparative analysis of software assets that provide similar functionality. Comparison criteria may include functional characteristics, licensing or leasing terms, cost, and security-relevant attributes. By normalizing this information across products and vendors, BloSS@M supports informed decision-making and 
+                    promotes the reuse of approved software assets across agencies.  
+                  </p>
+                  <p>
+                    Asset Comparison is a capability that could also be extended to a centralized government-wide firmware and hardware acquisition service. 
+                  </p>
+                </div>
+              </div>
+            </div>            
+
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Leasing and Traceability</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    A centrally managed leasing approach is supported in BloSS@M, where software usage rights are allocated to authorized users and can be adjusted dynamically based on operational needs. This model allows licenses to be reassigned as demand shifts, improving overall utilization while limiting unnecessary or
+                    duplicate purchases. All leasing transactions and usage events are systematically captured, ensuring that activity remains traceable and auditable. 
+                  </p>
+                  <p>
+                    This leasing and traceability function enables comprehensive lifecycle management of software assets by integrating ISO/IEC 19770-2 software identification (SWID) tags with 
+                    established governance and operational workflows. SWID tags provide structured, machine-readable identifiers that describe key attributes of software, including product identity, version, edition, patch status, and relationships between lifecycle events such as installation, update, and removal.
+                  </p>
+                  <p>
+                    By leveraging this standardized metadata, BloSS@M can maintain continuous visibility into software deployment and usage across environments. It supports ongoing monitoring of license entitlement versus actual consumption, tracks changes in software installations, and helps confirm that updates and security 
+                    patches are properly applied throughout the lifecycle of each asset.
+                  </p>
+                </div>
+              </div>
+            </div>             
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="asset-security-intro">
+          <h2 class="section-title">Technical Capabilities for Assets</h2>
+            <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Secure Configuration and Control Implementation</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>BloSS@M integrates security configuration and control implementation information using OSCAL Component Definition artifacts. These artifacts provide machine-readable descriptions of implemented security controls and related characteristics for software assets. 
+                    This capability enables consistent representation and allows for the automated analysis of software security posture across products, platforms, and vendors.  
+                  </p>
+                  <p>
+                    Using the OSCAL Component Definition model, vendors can create artifacts that document cryptographic elements, provenance, implemented security controls, and known vulnerabilities for any software, 
+                    firmware or hardware component. These OSCAL artifacts can then be linked to any chosen Bill of Material (BOM) using OSCAL's built-in extension mechanisms. In the context of a BloSS@M-like service for hardware and firmware assets acquisition, OSCAL Component 
+                    Definition artifacts can also incorporate pointers to application-specific integrated circuit (ASIC) documentation.                       
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Vulnerability Identification</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    BloSS@M maintains ongoing linkage between software assets and publicly documented vulnerabilities through integration with the NVD. The vulnerability data it uses includes details such as affected products, unique vulnerability IDs, 
+                    and severity or impact scores. With this information, organizations can better understand their exposure, decide which issues to address first, and incorporate security risk into decisions about software procurement and lifecycle management.
+                    The Asset Vulnerability Identification function could also be expanded to support a centralized, government-wide service for acquiring firmware and hardware.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Threat Overlay</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    BloSS@M enables threat analysis by mapping the security attributes of software assets to adversary tactics, techniques, and procedures described in the MITRE ATT&CK framework. 
+                    This type of threat overlay adds context on how software might be exploited or targeted in real-world environments, helping improve the quality of risk assessments and decision-making.
+                    The Asset Threat Overlay capability could likewise be broadened to support a centralized, government-wide system for acquiring firmware and hardware.
+                  </p>      
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Provisional Assessment</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Building on standardized security models and the integration of vulnerability and threat intelligence, BloSS@M enables automated and AI-assisted preliminary security evaluations. 
+                    In this context, a provisional security assessment is an early-stage determination of risk for a system component that has not yet been fully developed or deployed. It draws on initial testing 
+                    of security controls, risk analysis, and OSCAL Component Definitions, while formal assessment and authorization are carried out later within the system's operational context.
+                  </p>
+                  <p>
+                    These assessments make use of agentic and generative AI methods to evaluate documented security controls in structured formats such as OSCAL Component Definitions, and to relate identified threats 
+                    and mitigations using frameworks like <strong>MITRE ATT&CK and D3FEND</strong>. The outputs are designed to support ongoing monitoring, comparative risk analysis, and informed decision-making, while still complementing 
+                    established authorization and risk management processes.
+                  </p>
+                </div>
+              </div>
+            </div>            
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="asset-security-intro">
+          <h2 class="section-title">Leveraging the National Vulnerability Database (NVD) for Asset Vulnerabilities</h2>
+          <div class="section-content">
+            <p>
+              The ability to discover, map, and evaluate publicly disclosed software vulnerabilities plays a key role in both software asset management and supply 
+              chain risk management. Within the BloSS@M service, the asset vulnerability identification function brings structure to vulnerability data and provides automated access to trusted sources, helping 
+              maintain ongoing visibility into security risks associated with software.
+            </p>
+            <p>
+              BloSS@M incorporates the <strong style="color: var(--nist-blue);">Common Vulnerabilities and Exposures (CVE)</strong> program and the <strong style="color: var(--nist-blue);">National Vulnerability Database (NVD)</strong>, along with automated mechanisms for retrieving their data. Together, these capabilities support 
+              scalable, up-to-date analysis of vulnerabilities across all managed software assets.
+            </p>
+            <div class="section-divider"></div>
+            <p>
+              BloSS@M uses the CVE program and the NVD to identify and track publicly known software vulnerabilities in a consistent way. The CVE program assigns a unique ID to each vulnerability found in software, firmware, or hardware so it can be easily referenced across tools and organizations. It is maintained by MITRE and 
+              supported by DHS and CISA.
+            </p>
+            <p>
+              The NVD expands on CVE records by adding extra details like affected products, severity scores, impact information, and links to more resources. The Common Platform Enumeration (CPE) system provides a standard way to name software and hardware products so they 
+              can be matched more easily to vulnerabilities. Together, CVE, NVD, and CPE are part of the Security Content Automation Protocol (SCAP), which helps automate vulnerability management.
+            </p>
+            <p>
+              In BloSS@M, this data is used to connect software assets with known vulnerabilities in a clear, structured way. This supports automated risk tracking and helps manage security issues throughout the software lifecycle.
+            </p>
+            
+            <div class="section-divider"></div>
+            
+            <h2 style="text-align:center">Automated Vulnerability Detection Using NVD Data</h2>
+            <br>
+            <p>
+              The NVD offers publicly available application programming interfaces (APIs) that allow automated access to vulnerability data. These APIs support structured searches using parameters such as CVE IDs, CPE names, vendors, products, and software versions. 
+              BloSS@M connects to the NVD APIs to automatically retrieve vulnerability information as needed for the software assets managed in the system.
+            </p>
+            <p>
+              The integration between BloSS@M and the NVD APIs is organized as a defined data flow:
+            </p>
+            <div class="accordion-item">
+              <button class="accordion-header">Asset Identification</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Using OSCAL component definition artifacts, BloSS@M links registered software assets to key identifying details such as product name, 
+                    version, and standardized CPE identifiers when they are available.
+                  </p>      
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Query Construction</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Using the asset metadata, BloSS@M builds queries for the NVD API with relevant search parameters, such as CPE names or CVE IDs, to obtain vulnerability 
+                    records associated with the asset.
+                  </p>      
+                </div>
+              </div>
+            </div>       
+
+            <div class="accordion-item">
+              <button class="accordion-header">API Invocation</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    BloSS@M submits requests to NVD APIs using supported query mechanisms. These requests are executed on demand or as part of scheduled monitoring activities. 
+                  </p>      
+                </div>
+              </div>
+            </div>       
+            
+            <div class="accordion-item">
+              <button class="accordion-header">Data Retrieval and Normalization</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    The NVD API returns data in a structured format that includes details such as CVE IDs, affected versions, severity scores (like CVSS), and reference links. 
+                    BloSS@M then standardizes this information so it is represented consistently across different assets and vendors.
+                  </p>      
+                </div>
+              </div>
+            </div> 
+            
+            <div class="accordion-item">
+              <button class="accordion-header">Correlation and Association</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Retrieved vulnerability data is correlated with the corresponding software assets within BloSS@M to enable traceability between assets, vulnerabilities, and security information.
+                  </p>      
+                </div>
+              </div>
+            </div> 
+            
+            <div class="accordion-item">
+              <button class="accordion-header">Downstream Analysis and Use</button>
+              <div class="accordion-content">
+                <div class="section-content">
+                  <p>
+                    Associated vulnerability data is made available for comparative analysis, risk evaluation, and integration with other BloSS@M capabilities, 
+                    including threat mapping, AI-assisted provisional assessments, and continuous authorization activities.
+                  </p>      
+                </div>
+              </div>
+            </div>             
+            
+            
+
+          </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="asset-security-intro">
+          <h2 class="section-title">Leveraging MITRE ATT&CK and D3FEND for Software Asset Resilience Assessment</h2>
+          <div class="section-content">
+             <p>
+              BloSS@M uses the MITRE ATT&CK and MITRE D3FEND frameworks to evaluate how well a software asset can resist known attacker behaviors. ATT&CK describes common attacker 
+              tactics and techniques, while D3FEND focuses on defensive methods that can help prevent, detect, or reduce those attacks.
+             </p> 
+             <p>
+              The process starts by collecting security-related information about each software asset, including its controls and configurations. This information comes 
+              from sources like OSCAL Component Definition artifacts. BloSS@M then matches these controls to D3FEND techniques to show what defenses the asset has in place.
+             </p>
+             <p>
+              At the same time, BloSS@M uses ATT&CK to identify which attack techniques are relevant to the asset based on how it is used, where it is deployed, and any known vulnerabilities. 
+              Data from the NVD can also help highlight which attacks are more likely.
+             </p>
+             <p>
+              By comparing ATT&CK threats with D3FEND defenses, BloSS@M identifies where protections are strong and where gaps exist. This makes it easier to see how resilient a software asset is 
+              compared to others with similar functions and helps guide decisions around software selection, configuration, and risk management.
+             </p>
+
+          </div>
+
+        </section>        
+
+      </div>
+    </div>
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+  <!-- Accordion functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+          // Toggle active class on the header
+          this.classList.toggle('active');
+
+          // Find the associated content
+          const content = this.nextElementSibling;
+
+          if (content) {
+            // Toggle active class on content
+            content.classList.toggle('active');
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+ </script>
+ <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+  <script type=text/javascript src=../../../assets/js/site.min.js
+    integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), $("a.usa-link--external").leaveNotice() })</script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js
+    integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ=="
+    crossorigin=anonymous></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+</body>
+
+</html>

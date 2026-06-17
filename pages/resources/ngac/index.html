@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Next Generation Access Control (NGAC)</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">NEXT GENERATION ACCESS CONTROL (NGAC)</div>
+    </div>
+
+    <section class="intro-section">
+      <h1>Next Generation Access Control (NGAC)</h1>
+      <p>
+        A graph-based, attribute-driven access control standard built for complex, multi-stakeholder environments.
+        NGAC is a core enforcement layer within the BloSS@M framework.
+      </p>
+    </section>
+
+    <div class="layout-container">
+      <div id="sidenav-main"></div>
+
+      <div class="main-content">
+        <section class="content-section">
+          <h2 class="section-title">Introduction to Blockchains</h2>
+      <div class="section-content">
+        <p>
+          BloSS@M relies on blockchain technology as a foundational mechanism for maintaining a shared, 
+          verifiable record of software asset lifecycle information across organizational boundaries.
+          A <strong>blockchain</strong> is a distributed digital ledger that records transactions in a way that makes it
+          resistant to unauthorized modification. These transactions are grouped into blocks and are cryptographically linked
+          to preceding blocks, forming an append-only record that enables the detection of unauthorized changes.
+          <br><br>
+          Blockchain technology helps ensure that information is trustworthy, secure, and resistant to tampering. Each transaction
+          is protected through cryptographic techniques that verify its authenticity and integrity. Once a transaction is validated
+          and added to the blockchain, it becomes part of a permanent record that cannot be modified or deleted without
+          leaving evidence of the change. This allows organizations to share and rely on information with greater confidence, even when
+          participants do not fully trust one another or operate under a single governing authority.
+          <br><br>
+          To protect sensitive information, blockchain platforms can incorporate encryption and access control capabilities. These controls
+          help determine who can view, submit, or manage specific data, ensuring that stakeholders only have access to information appropriate
+          to their roles. Such capabilities are especially valuable in IT, operational technology (OT), and federal environments, where multiple
+          organizations often collaborate while maintaining different responsibilities and levels of authority.
+          <br>
+          Blockchain networks are designed to be distributed across multiple participants, with each node maintaining a synchronized copy of the
+          ledger. This decentralized structure improves system resilience, availability, and fault tolerance by avoiding reliance on a single
+          organization or system. Consensus processes allow participating nodes to collectively verify and agree on transactions before they are permanently
+          recorded, helping maintain the accuracy and consistency of the shared ledger.
+          <br><br>
+          Blockchain applications use smart contracts to automate and enforce the rules and processes that support business function.
+          These smart contracts are deployed to the network as executable code and help ensure that transactions and data updates are handled consistently
+          across all participants. To maintain trust and security, changes to the deployed code typically require approval from designated network members,
+          reducing the risk of unauthorized or malicious modifications.
+
+          <br><br>
+          Common blockchain attributes:
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">Ledger</button>
+              <div class="accordion-content">A persistent, append-only, and tamper-resistant record of transactions.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Security</button>
+              <div class="accordion-content">Cryptographic mechanisms protect data integrity, support authentication, and enable non-repudiation.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Shared</button>
+              <div class="accordion-content">A ledger is accessible to authorized participants within the network according to defined governance and access policies.</div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">Distributed</button>
+              <div class="accordion-content">Replicated copies of the ledger are maintained across multiple nodes to improve availability and resilience.</div>
+            </div>
+          </div> 
+          
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+      <h2 class="section-title">Permissioned Blockchains</h2>
+      <div class="section-content">
+        <p>
+          Blockchain systems generally fall into two categories: <strong>permissionless</strong> and <strong>permissioned</strong> architectures. A permissionless blockchain
+          allows any participant to join the network without requiring approval from a central authority. Users can typically access the ledger and submit transactions anonymously, with trust established
+          through consensus protocols such as Proof of Work (PoW). Although this approach promotes openness, transparency, and decentralization, it can also introduce challenges related to scalability, computational
+          overhead, and data privacy.
+        </p>
+        <p>
+          By contrast, a permissioned blockchain limits network access to verified participants. Only approved individuals or organizations are granted the ability to view ledger data or initiate transactions.
+          This controlled access framework provides greater oversight of data sharing and transaction processing, resulting in stronger privacy protections, improved data integrity, and more efficient operations.
+        </p>
+        <p>
+          <strong>Permissioned managed blockchains (PMBs)</strong> build upon the permissioned model by adding administrative capabilities such as governance controls, identity and access management, and system oversight
+          functions. As a result, PMBs often provide several advantages over permissionless blockchain networks including:
+        </p>
+        <div class="policy-cards">
+          <div class="policy-card">
+            <h3>Higher scalability and performance</h3>
+            <p>Achieved by utilizing cryptographic proof of authorization rather than computationally intensive consensus algorithms such as PoW</p>
+          </div>
+          <div class="policy-card">
+            <h3>Reduced transaction costs</h3>
+            <p>Lower resource consumption and streamlined network operations</p>
+          </div>
+          <div class="policy-card">
+            <h3>Granular access control</h3>
+            <p>Fine-grained permissions to be applied to the user, organization, or channel level</p>
+          </div>
+          <div class="policy-card">
+            <h3>Configurable consensus mechanisms</h3>
+            <p>Enable adaptation to specific operational or compliance requirements</p>
+          </div>
+          <div class="policy-card">
+            <h3>Simplified governance and onboarding processes</h3>
+            <p>Clearly defined participant roles and controlled membership management</p>
+          </div>
+          <div class="policy-card">
+            <h3>Resilience against consensus manipulation</h3>
+            <p>Membership and transaction validation governed by authorized entities rather than arbitrary network participants</p>
+          </div>
+          <div class="policy-card">
+            <h3>Role-based management interfaces</h3>
+            <p>Facilitated by system oversight and maintenance</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+        <section class="content-section">
+          <h2 class="section-title">What Is NGAC?</h2>
+      <div class="section-content">
+        <p>
+          Next Generation Access Control (NGAC) is a NIST-developed, ANSI-standardized Attribute-Based Access Control (ABAC) framework that uses a graph structure
+          to represent complex access control policies and the relationships between users, objects, and their attributes. NGAC is implemented within the smart contracts 
+          of the blockchain's code to enhance the access control to the data generated by BloSS@M. 
+          Unlike traditional role-based models, NGAC is designed to express and enforce fine-grained, dynamic permissions at scale,
+          making it well-suited for federal and multi-agency IT environments. In BloSS@M, NGAC is embedded directly into the
+          smart contracts of the blockchain chaincode, enforcing access decisions at the point of data interaction across the
+          distributed ledger.
+        </p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+      <h2 class="section-title">NGAC Functional Components</h2>
+      <div class="section-content">
+        <p>
+          NGAC defines a standardized architecture composed of six distinct components, each playing a specific role in ensuring
+          access control policies are consistently enforced, administered, and audited.
+        </p>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Policy Enforcement Point (PEP)</button>
+            <div class="accordion-content">Intercepts access requests and enforces decisions made by the PDP before granting or denying access to resources.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Policy Decision Point (PDP)</button>
+            <div class="accordion-content">Evaluates access requests against defined policies and returns an authorization decision to the PEP.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Policy Administration Point (PAP)</button>
+            <div class="accordion-content">Provides the interface through which administrators define, update, and manage access control policies.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Event Processing Point (EPP)</button>
+            <div class="accordion-content">Monitors for defined event patterns and triggers administrative actions or obligations in response.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Policy Information Point (PIP)</button>
+            <div class="accordion-content">Supplies attribute data and contextual information needed by the PDP to evaluate access decisions.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Resource Access Point (RAP)</button>
+            <div class="accordion-content">Manages access to the actual resources or objects being protected within the system.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+      <h2 class="section-title">Policy Element Types</h2>
+      <div class="section-content">
+        <p>
+          NGAC represents access control policies as a graph. Five node types form the building blocks of every policy:
+        </p>
+
+        <div class="policy-cards">
+          <div class="policy-card">
+            <h3>User</h3>
+            <p>Human or non-person entities (e.g., automated systems, services) that request access to resources.</p>
+          </div>
+          <div class="policy-card">
+            <h3>Object</h3>
+            <p>Logical representations of physical or digital resources, regardless of format or location.</p>
+          </div>
+          <div class="policy-card">
+            <h3>User Attribute</h3>
+            <p>Characteristics applied to users (such as role, clearance level, or agency membership) and are used to drive access decisions.</p>
+          </div>
+          <div class="policy-card">
+            <h3>Object Attribute</h3>
+            <p>Properties assigned to objects that determine classification and applicable access rules.</p>
+          </div>
+          <div class="policy-card">
+            <h3>Policy Class</h3>
+            <p>High-level domains defining the overarching access control model in effect, such as Role-Based Access Control (RBAC) or Discretionary Access Control (DAC).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+      <h2 class="section-title">Relationship Types</h2>
+      <div class="section-content">
+        <p>
+          Edges in the NGAC policy graph define how elements relate to one another. Four relationship types give administrators
+          precise control over how access is granted, restricted, and triggered.
+        </p>
+
+        <ul>
+          <li><strong>Assignment</strong> — Builds hierarchy by linking elements, grouping users and objects under attributes, and nesting attributes within
+              policy classes to define access domains.</li>
+          <li><strong>Association</strong> — Connects a user attribute to an object attribute, granting access rights from the source to the target.
+              Represented as a directed edge in the policy graph.</li>
+          <li><strong>Prohibition</strong> — Explicitly denies access rights. Evaluated after associations, allowing administrators to carve out precise
+              exceptions within broader permissions.</li>
+          <li><strong>Obligation</strong> — Specifies event patterns and the administrative actions triggered when those events occur, managed by the
+              Event Processing Point (EPP).</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+      <h2 class="section-title">NGAC in BloSS@M</h2>
+      <div class="section-content">
+        <p>
+          By embedding NGAC directly into blockchain smart contracts, BloSS@M enforces fine-grained, policy-driven access control
+          at every point of data interaction — ensuring that sensitive software asset information is visible only to those authorized
+          to see it, across every participating agency.
+        </p>
+
+        <div style="text-align: center; margin: 2rem 0; position: relative;">
+          <div style="position: relative; display: inline-block;">
+            <img src="../../../assets/images/ngac-diagram.png" alt="Diagram of NGAC Asset Chaincode Policy" id="ngac-image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <div id="magnifying-glass" style="position: absolute; bottom: 10px; right: 10px; background: rgba(255,255,255,0.9); border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); cursor: pointer; transition: all 0.2s ease;" onclick="zoomImage()" onmouseover="this.style.background='rgba(255,255,255,1)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.transform='scale(1)'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06425e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="content-section">
+        <h2 class="section-title">Two Private Channels for Access Control</h2>
+        <div class="section-content">
+          <p>
+            BloSS@M's permissioned blockchain requires two distinct private channels, each governed by their own set of smart contracts that implement NGAC:
+            <ul>
+              <li><strong>Authorization Channel:</strong> Dedicated to the assessment and authorization (A&A) process, where peer nodes prove and continuously maintain their security posture in line with
+              FISMA requirements</li>
+              <li><strong>Assets Channel:</strong> Focused on the core business functions of BloSS@M to support the implementation of its operational and technical capabilities</li>
+            </ul>
+          </p>
+          <p>
+            The network is organized into those two primary channels with their distinct responsibilities. The authorization channel is responsible for handling automated security evaluations, managing member onboarding and authorization,
+            and enforcing cATO-related processes. The asset channel, in contrast, provides access to BloSS@M functionality, enabling participants to locate and evaluate software assets, securely obtain software licenses, and oversee those assets throughout their lifecycle.
+          </p>
+          <p>BloSS@M operates through a designated service provider member that establishes these channels and applies the NGAC policy framework. This member assigns the required permissions within both channels to organizations as they join the network and deploy their own peer nodes.</p>
+          <p>Because secure business transactions depend on trusted, participants, trust is established through automated authorization, accreditation, and continuous authority to operate (C-ATO) mechanisms. As a result, the authorization channel serves as the governance layer for the asset
+            channel, determining which peer nodes are authorized to participate in and validate business transactions.
+          </p>
+          </p>
+        </div>
+    </section>
+
+    </div>
+
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+   </script>
+  
+   <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+
+  <script type=text/javascript src=../../assets/js/site.min.js
+    integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), $("a.usa-link--external").leaveNotice() })</script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js
+    integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ=="
+    crossorigin=anonymous></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+        const content = item.querySelector('.accordion-content');
+        content.classList.toggle('active');
+      });
+    });
+
+    // NGAC image hover and zoom functions
+    const img = document.getElementById('ngac-image');
+    const magnifyingGlass = document.getElementById('magnifying-glass');
+    let zoomed = false;
+    let isHovering = false; 
+
+    function updateImageStyle() {
+      const scale = zoomed ? 2 : 1;
+      const lift = isHovering ? 'translateY(-10px)' : 'translateY(0)';
+      img.style.transform = `scale(${scale}) ${lift}`;
+
+      if (zoomed) {
+        img.style.boxShadow = '0 20px 30px rgba(0, 0, 0, 0.2)';
+      } else {
+        if (isHovering) {
+          img.style.boxShadow = '0 12px 16px rgba(0, 0, 0, 0.15)';
+        } else {
+          img.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        }
+      }
+    }
+
+    img.addEventListener('mouseenter', () => {
+      isHovering = true;
+      updateImageStyle();
+    });
+    img.addEventListener('mouseleave', () => {
+      isHovering = false;
+      if (zoomed) {
+        zoomed = false;
+        magnifyingGlass.style.opacity = '1';
+        magnifyingGlass.style.pointerEvents = 'auto';
+      }
+      updateImageStyle();
+    });
+
+    function zoomImage() {
+      zoomed = !zoomed;
+      if (zoomed) {
+        magnifyingGlass.style.opacity = '0';
+        magnifyingGlass.style.pointerEvents = 'none';
+      } else {
+        magnifyingGlass.style.opacity = '1';
+        magnifyingGlass.style.pointerEvents = 'auto';
+      }
+      updateImageStyle();
+    }
+
+    window.zoomImage = zoomImage;
+  });
+</script>
+</body>
+
+</html>

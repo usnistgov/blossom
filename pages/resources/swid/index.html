@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="nist-footer-bottom">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SOFTWARE IDENTIFICATION TAG (SWID)</title>
+
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge"/ --->
+  <meta name="docsearch:language" content="None" />
+  <!-- header and Footer are mandated by NIST. Do not remove or modify -->
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" />
+  <link rel="stylesheet" type="text/css" href="https://pages.nist.gov/leaveNotice/css/jquery.leaveNotice.css" />
+  <link rel="stylesheet" href="../../../assets/css/blossom.css">
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+    defer="defer"></script>
+  <script async type="text/javascript" id="_fed_an_ua_tag"
+    src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+  <script src="../../../assets/js/uswds-init.min.js"></script>
+  
+  <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
+</head>
+
+<body>
+  <div id="nav-main"></div>
+
+  <div id="main" class="nist-main">
+    <div class="page-header">
+      <div class="page-header-text">SOFTWARE IDENTIFICATION TAG (SWID)</div>
+    </div>
+
+    <section class="intro-section">
+      <h1>Asset Traceability using Software Identification Tags (SWID)</h1>
+      <p>To address challenges in software identification and asset management, Software Identification (SWID) tagging was created as a standardized mechanism for describing software products.
+           This approach improves software discovery and contextual awareness while enabling more accurate and reliable asset management.
+        </p>
+    </section>
+
+    <div class="page-content-flex">
+      <aside id="sidenav-main"></aside>
+      <div class="main-content">
+        <section class="swid-intro">
+          <h2 class="section-title">Introduction to SWID</h2>
+          <div class="section-content">
+            <p>
+              Upon installation of software on a device, a unique ISO Software Identification (SWID) tag is generated to act as a digital identifier for that software. The SWID tag is stored locally on
+              the device, while a corresponding record is simultaneously written to the BloSS@M blockchain, creating an immutable and verifiable record of the installation event.
+            </p>
+            <p>
+              As part of the software leasing workflow, the device must report the generated SWID tag to the blockchain. This process links the installed software to its assigned license and provides verifiable proof that the
+              software is being used in accordance with licensing requirements. When the end user relinquishes the license, the software is required to be removed from the device. During uninstallation, the associated SWID tag is deleted
+              from the device registry, and the blockchain record is updated to reflect that the software is no longer deployed or actively licensed.
+            </p>
+            <p>
+              By integrating SWID tagging with blockchain-based record keeping, BloSS@M maintains an accurate and auditable inventory of software installations. This approach strengthens license management, deters unauthorized usage, and supports
+              ongoing compliance with software licensing agreements.
+            </p>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+           <section class="swid-tag-types">
+          <h2 class="section-title">Types of SWID Tags</h2>
+          <div class="section-content">
+            <p>
+              SWID tags are categorized into four types: corpus, primary, patch, and supplemental. Corpus, primary, and patch tags serve as indicators of installed software, while supplemental tags convey ancillary information that is not represented
+              in the other tag categories.
+            </p>
+            <div class="swid-tags-grid">
+              <div class="swid-tag-card">
+                <h3 class="swid-tag-title">Corpus SWID Tags</h3>
+                <p class="swid-tag-description">
+                  These tags assist in verifying the software product and authenticating the organization that distributes it. They can also be utilized by installation tools to ensure the software's integrity and confirm the presence of a valid license before installation.
+                </p>
+              </div>
+
+              <div class="swid-tag-card">
+                <h3 class="swid-tag-title">Primary SWID Tags</h3>
+                <p class="swid-tag-description">
+                  After installation, these tags serve to identify and characterize software products. They typically include the product name, a unique tag ID, and metadata about the tag creator. The tag ID can function as a proxy for the software, allowing asset management and inventory tools to identify and report its presence.
+                </p>
+              </div>
+
+              <div class="swid-tag-card">
+                <h3 class="swid-tag-title">Patch SWID Tags</h3>
+                <p class="swid-tag-description">
+                  Each patch SWID tag represents a specific software patch. The tag is deployed alongside the patch during installation and contains metadata about the patch itself, rather than the underlying software that receives the update.
+                </p>
+              </div>
+
+              <div class="swid-tag-card">
+                <h3 class="swid-tag-title">Supplemental SWID Tags</h3>
+                <p class="swid-tag-description">
+                  These tags are used to associate additional metadata with installed software after deployment. Created by users or software management systems, they may include information such as licensing credentials or contact information. While they can be installed at any stage, modification privileges are restricted to the tag's creator.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="swid-users">
+          <h2 class="section-title">Benefits of Utilizing SWIDs</h2>
+          <div class="section-content">
+            <p>SWID tags provide the following benefits to <strong>software creators, publishers, buyers, and users:</strong></p>
+            <ul>
+              <li>Indicate the presence of software on a device to aid discovery</li>
+              <li>Provide a product label to support identification</li>
+              <li>Include product details (e.g., name, version) to enable contextualization</li>
+            </ul>
+            
+            <div class="section-divider"></div>
+
+            <p>A SWID tag document includes structured metadata about a software product, such as its identity, version, creators, distributors, components, and relationships to other software. This information helps asset management and security tools <strong>automate
+              software lifecycle activities</strong>. SWID helps to automate:
+              <ul>
+                <li>Software inventory in software asset management</li>
+                <li>Vulnerability assessments of installed software</li>
+                <li>Detection of missing patches</li>
+                <li>Configuration checklist assessments</li>
+                <li>Software integrity verification</li>
+                <li>Creation of execution and installation whitelists/blacklists</li>
+                <li>Other operational and cybersecurity functions</li>
+              </ul>
+            </p>
+
+            <div class="section-divider"></div>
+
+            <p>Vendors often provide tools to manage their own software products, but organizations commonly use multiple tools from different vendors. This fragmented approach can lead to errors, resource constraints, delayed patching, configuration drift, and inefficient license management.
+              To provide a unified view of software assets across the enterprise, organizations can use ISO/IEC 19880-2:2015, which defines Software Identification (SWID) tags. These tags standardize software metadata, enabling more effective tracking, management, and auditing across diverse
+              software environments.
+            </p>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="swid-support">
+          <h2 class="section-title">SWID Supporting the SDLC</h2>
+          <div class="section-content">
+            <p>SWID tags support stakeholders throughout the system development lifecycle (SDLC) in numerous ways. This includes:</p>
+            <ul>
+              <li>Continuous and accurate identification of software to be managed</li>
+              <li>Reliable tracking of software changes on devices using consistent identifiers</li>
+              <li>Standardized information exchange between producers and consumers</li>
+              <li>Automated compliance tracking for software licenses and usage</li>
+              <li>Collection of detailed asset data, including what software is deployed and where</li>
+              <li>Identification of all parties involved in installing, licensing, maintaining, and managing software</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <div class="center-text" id="updated" ></div>
+
+  <script src="../../../assets/js/load-nav.js"></script>
+  <script src="../../../assets/js/load-sidenav.js"></script>
+  <script src="../../../assets/js/uswds.min.js"></script>
+
+
+  <script>
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
+ </script>
+ <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+      id=main-improve-page
+      onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
+      class="usa-button usa-button--accent-cool">Improve this Page</button>
+  </p>
+  <script type=text/javascript src=../../../assets/js/site.min.js
+    integrity="sha512-BtzZp1nYKlN4EJRRqXweO0IJjK1MhKWdq+73Q5GL+j6Nun0rxc6jzNSL7lxS7LUvnPmftl6WSq6YUmcZzpeetA=="></script>
+  <script type=text/javascript src=https://pages.nist.gov/leaveNotice/js/jquery.leaveNotice-nist.min.js></script>
+  <script>$(document).ready(function () { $('a[href*="//"]:not([href*="pages.nist.gov"]):not([href*="www.nist.gov"]):not([href^="#"]):not([href^="/"])').addClass("usa-link usa-link--external"), $("a.usa-link--external").leaveNotice() })</script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js
+    integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ=="
+    crossorigin=anonymous></script>
+  <script>anchors.options = { placement: "left" }, anchors.add()</script>
+</body>
+
+</html>
