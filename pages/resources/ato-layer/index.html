@@ -21,18 +21,6 @@
   <script src="../../../assets/js/uswds-init.min.js"></script>
 
   <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
-  <style>
-    .usa-button--accent-cool:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .nav-tab:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-  </style>
 </head>
 
 <body>
@@ -55,45 +43,15 @@
       <aside id="sidenav-main"></aside>
       <div class="main-content">
         <!-- Related Pages Label -->
-        <div style="margin-bottom: 12px; font-weight: 600; color: #00bde3; text-align: center;">
+        <div class="related-pages-label">
           Related Pages:
         </div>
         <!-- Navigation Tabs -->
-        <div class="navigation-tabs" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
-          <a href="../ngac/index.html" class="nav-tab" style="
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border: 1px solid #90caf9;
-            color: #0d47a1;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            min-width: 150px;
-            text-align: center;
-            display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-          ">
+        <div class="navigation-tabs-container">
+          <a href="../ngac/index.html" class="nav-tab ngac-tab">
             NGAC Framework
           </a>
-          <a href="../onboarding-process/index.html" class="nav-tab" style="
-            background: linear-gradient(135deg, #bbdefb, #90caf9);
-            border: 1px solid #64b5f6;
-            color: #0d47a1;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            min-width: 150px;
-            text-align: center;
-            display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-          ">
+          <a href="../onboarding-process/index.html" class="nav-tab onboarding-tab">
             Onboarding Process
           </a>
         </div>
@@ -101,9 +59,9 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Why Authorization Matters in BloSS@M</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Why Authorization Matters in BloSS@M</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 BloSS@M is designed as a federated, multi-agency environment where software assets, security information, and operational data may be shared across organizational boundaries. Because federal agencies remain subject to FISMA requirements and NIST Risk Management Framework guidance, every participating member must be assessed and authorized before joining the network.
                 Traditional authorization approaches rely heavily on manual reviews, document exchanges, and periodic assessments. In a dynamic environment where members may join, leave, or modify their systems frequently, these processes become difficult to scale and can delay mission operations.
@@ -116,16 +74,16 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Continuous Authorization to Operate (C-ATO)</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Continuous Authorization to Operate (C-ATO)</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 Rather than treating authorization as a periodic event, BloSS@M adopts a Continuous Authorization to Operate (C-ATO) approach.
               </p>
               <p>
                 Continuous ATO focuses on:
               </p>
-              <ul style="padding-left: 1.5rem;">
+              <ul class="list-padding-left">
                 <li>Ongoing assessment of implemented security controls</li>
                 <li>Continuous monitoring of system security posture</li>
                 <li>Automated collection of security evidence</li>
@@ -142,9 +100,9 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">OSCAL: The Foundation of Security Automation</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">OSCAL: The Foundation of Security Automation</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 A key enabler of the BloSS@M ATO Layer is the Open Security Controls Assessment Language (OSCAL).
               </p>
@@ -152,7 +110,7 @@
                 OSCAL is a NIST-developed framework that provides machine-readable formats for documenting, implementing, assessing, and monitoring security controls. It supports standardized representations using XML, JSON, and YAML formats, enabling security information to be exchanged and processed automatically.
                 Within BloSS@M, OSCAL is used to:
               </p>
-              <ul style="padding-left: 1.5rem;">
+              <ul class="list-padding-left">
                 <li>Exchange security documentation in a standardized format</li>
                 <li>Represent System Security Plans (SSPs)</li>
                 <li>Share assessment plans and assessment results</li>
@@ -164,8 +122,8 @@
               <p>
                 By replacing manual document reviews with structured data, OSCAL helps reduce assessment effort, improve consistency, and support scalable authorization processes.
               </p>
-              <div class="text-center">
-                <p><a href="../oscal/index.html" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn more about OSCAL</a></p>
+              <div class="text-center-button">
+                <p><a href="../oscal/index.html" class="usa-button usa-button--accent-cool button-hover-shadow">Learn more about OSCAL</a></p>
               </div>
             </div>
           </div>
@@ -174,16 +132,16 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Member Onboarding Requirements</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Member Onboarding Requirements</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 Before joining the BloSS@M network, prospective members must demonstrate compliance with the security requirements established by the network governance model and onboarding Memorandum of Understanding (MOU).
               </p>
               <p>
                 Members are expected to:
               </p>
-              <ul style="padding-left: 1.5rem;">
+              <ul class="list-padding-left">
                 <li>Implement required security controls</li>
                 <li>Maintain a predefined security posture</li>
                 <li>Produce OSCAL-formatted security documentation</li>
@@ -201,16 +159,16 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Automated Assessments and Security Evidence</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Automated Assessments and Security Evidence</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 The BloSS@M ATO Layer relies on automation to evaluate and validate member security posture.
               </p>
               <p>
                 Security information is represented as OSCAL artifacts that can be automatically analyzed and reviewed. These artifacts may include:
               </p>
-              <ul style="padding-left: 1.5rem;">
+              <ul class="list-padding-left">
                 <li>System Security Plans (SSPs)</li>
                 <li>Assessment Plans</li>
                 <li>Assessment Results</li>
@@ -227,14 +185,14 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Security Visibility Across the Network</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Security Visibility Across the Network</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 BloSS@M leverages blockchain technology to provide a shared, tamper-evident environment for participating organizations. Blockchain technology creates an immutable record of transactions and events that can be independently verified by authorized participants.
                 Within the ATO Layer, this capability supports:
               </p>
-              <ul style="padding-left: 1.5rem;">
+              <ul class="list-padding-left">
                 <li>Traceable authorization activities</li>
                 <li>Auditable security evidence</li>
                 <li>Trusted attestation records</li>
@@ -244,8 +202,8 @@
               <p>
                 This approach helps establish trust among members while preserving each agency's responsibility for managing its own security risks.
               </p>
-              <div class="text-center">
-                <p><a href="../ngac/index.html" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn more about Blockchains and NGAC</a></p>
+              <div class="text-center-button">
+                <p><a href="../ngac/index.html" class="usa-button usa-button--accent-cool button-hover-shadow">Learn more about Blockchains and NGAC</a></p>
               </div>
             </div>
           </div>
@@ -254,13 +212,13 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Benefits of the BloSS@M ATO Layer</h2>
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
+          <h2 class="section-title section-title-ato">Benefits of the BloSS@M ATO Layer</h2>
+          <div class="step-container">
+            <div class="section-content">
               <p>
                 The ATO Layer enables BloSS@M to scale beyond traditional authorization approaches by providing:
               </p>
-              <div class="policy-cards" style="margin-top: 1.5rem;">
+              <div class="policy-cards policy-cards-ato">
                 <div class="policy-card">
                   <h3>Standardization</h3>
                   <p>Common security requirements and machine-readable documentation formats.</p>
@@ -305,7 +263,7 @@
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
    </script>
- <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+ <p class="font-sans-sm text-center margin-auto-vertical"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>

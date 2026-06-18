@@ -21,21 +21,6 @@
   <script src="../../../assets/js/uswds-init.min.js"></script>
 
   <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
-  <style>
-    .intro-section {
-      background: linear-gradient(to right, #ffffff, #f0f8ff, #ffffff);
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-    .nav-tab:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    }
-    .nav-tab:active {
-      transform: translateY(0);
-    }
-  </style>
 </head>
 
 <body>
@@ -65,45 +50,15 @@
       <aside id="sidenav-main"></aside>
       <div class="main-content">
         <!-- Related Pages Label -->
-        <div style="margin-bottom: 12px; font-weight: 600; color: #00bde3; text-align: center;">
+        <div class="related-pages-label">
           Related Pages:
         </div>
         <!-- Navigation Tabs -->
-        <div class="navigation-tabs" style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
-          <a href="../swid/index.html" class="nav-tab" style="
-            background: linear-gradient(135deg, #bbdefb, #90caf9);
-            border: 1px solid #64b5f6;
-            color: #0d47a1;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            min-width: 150px;
-            text-align: center;
-            display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-          ">
+        <div class="navigation-tabs-container">
+          <a href="../swid/index.html" class="nav-tab-business swid-tab">
             SWID Tags
           </a>
-          <a href="../asset-security/index.html" class="nav-tab" style="
-            background: linear-gradient(135deg, #90caf9, #64b5f6);
-            border: 1px solid #42a5f5;
-            color: #0d47a1;
-            padding: 14px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            min-width: 150px;
-            text-align: center;
-            display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-          ">
+          <a href="../asset-security/index.html" class="nav-tab-business asset-security-tab">
             Asset Security
           </a>
         </div>
@@ -111,7 +66,7 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Supporting Enterprise Software Asset Governance</h2>
             <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
               <p>
@@ -137,7 +92,7 @@
 
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Enhancing Transparency and Risk Visibility</h2>
             <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
               <p>
@@ -156,7 +111,7 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Secure License Leasing and Asset Distribution</h2>
             <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
               <p>
@@ -177,7 +132,7 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Policy-Governed Trust and Accountability</h2>
             <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
               <p>
@@ -201,7 +156,7 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Automation and Continuous Assurance</h2>
             <div class="section-content" style="background-color: white; padding: 15px; border-radius: 4px;">
               <p>
@@ -228,7 +183,7 @@
         <div class="section-divider"></div>
 
         <section class="content-section">
-          <div class="step-container" style="background-color: #f8f9fa; border-left: 4px solid #00bde3; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          <div class="step-container">
             <h2 class="section-title" style="color: #00bde3; margin-top: 0;">Business Outcomes</h2>
             <div class="section-content" style="background-color: #f0f8ff; padding: 20px; border-radius: 4px; border: 1px solid #e0e0e0;">
               <p>
