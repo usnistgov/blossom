@@ -105,8 +105,9 @@
   margin-bottom: 0;
 }
 
-.page-header-text h3 {
+.nist-main .page-header-text h3 {
   margin-top: 0;
+  color: white;
 }
 
 
