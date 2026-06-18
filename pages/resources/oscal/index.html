@@ -22,75 +22,6 @@
   
   <link rel="stylesheet" href="../../../assets/css/uswds.min.css" />
 
-  <style>
-    .usa-button--accent-cool:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-      background-color: #009ec5;
-      transition: all 0.2s ease;
-    }
-
-    .accordion {
-      margin: 1rem 0;
-    }
-    .accordion details {
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
-    }
-    .accordion summary {
-      padding: 0.75rem 1rem;
-      background-color: #f8f9fa;
-      cursor: pointer;
-      font-weight: 600;
-      outline: none;
-    }
-    .accordion summary:hover {
-      background-color: #e9ecef;
-    }
-    .accordion details[open] summary {
-      background-color: #e3f2fd;
-      border-bottom: 1px solid #ddd;
-    }
-    .accordion p {
-      padding: 0 1rem 1rem;
-      color: #555;
-      background-color: white;
-      margin: 0;
-      padding-top: 15px;
-      line-height: 1.5;
-    }
-    
-    .layout-container,
-    .main-content,
-    .content-section,
-    .section-content {
-      overflow: visible !important;
-    }
-    
-    .accordion details[open] {
-      overflow: visible;
-    }
-    .hover-image {
-      border-radius: 8px;
-      border: 2px solid #009ec5;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    }
-    .hover-image:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-
-    
-    .section-content.bg-white {
-      background-color: white;
-    }
-    
-    .section-content.shadow {
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
 
 <body>
@@ -127,7 +58,7 @@
                 approach enables greater automation, interoperability, faster assessments, continuous monitoring, and reuse of security data across tools, organizations, and compliance workflows.
                 <br /><br />
                 <div class="text-center">
-                  <p><a href="https://www.nist.gov/OSCAL" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Visit OSCAL's Official Website</a></p>
+                  <p><a href="https://www.nist.gov/OSCAL" class="usa-button usa-button--accent-cool" >Visit OSCAL's Official Website</a></p>
                 </div>
             </div>
           </section>
@@ -190,7 +121,7 @@
                 <img class="hover-image" src="../../../assets/images/oscal_layers_diagram.png" alt="OSCAL Layers and Models Diagram">
                 <p>Collectively, these 8 models facilitate consistent information sharing, outgoing security oversight, and automated authorization processes that support implementation of the NIST Risk Management Framework (RMF) and compliance with FISMA requirements.</p>  
                 <div class="text-center">
-                  <p><a href="https://pages.nist.gov/OSCAL/learn/concepts/layer/" class="usa-button usa-button--accent-cool" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Learn More About OSCAL's Models & Layers</a></p>
+                  <p><a href="https://pages.nist.gov/OSCAL/learn/concepts/layer/" class="usa-button usa-button--accent-cool" >Learn More About OSCAL's Models & Layers</a></p>
                 </div>
             </div>
           </section>
@@ -280,7 +211,7 @@
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
 </script>
- <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+ <p class="font-sans-sm text-center improve-page-wrapper"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>

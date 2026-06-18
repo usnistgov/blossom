@@ -276,10 +276,10 @@
           to see it, across every participating agency.
         </p>
 
-        <div style="text-align: center; margin: 2rem 0; position: relative;">
-          <div style="position: relative; display: inline-block;">
-            <img src="../../../assets/images/ngac-diagram.png" alt="Diagram of NGAC Asset Chaincode Policy" id="ngac-image" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-            <div id="magnifying-glass" style="position: absolute; bottom: 10px; right: 10px; background: rgba(255,255,255,0.9); border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); cursor: pointer; transition: all 0.2s ease;" onclick="zoomImage()" onmouseover="this.style.background='rgba(255,255,255,1)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.transform='scale(1)'">
+        <div class="ngac-image-wrapper">
+          <div class="ngac-image-container">
+            <img src="../../../assets/images/ngac-diagram.png" alt="Diagram of NGAC Asset Chaincode Policy" id="ngac-image">
+            <div id="magnifying-glass" onclick="zoomImage()" onmouseover="this.style.background='rgba(255,255,255,1)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.transform='scale(1)'">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06425e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
           </div>
@@ -327,7 +327,7 @@
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
    </script>
   
-   <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+   <p class="font-sans-sm text-center improve-page-wrapper"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>

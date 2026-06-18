@@ -22,134 +22,6 @@
 
   <link rel="stylesheet" href="../../../assets/css/uswds.min.css">
 
-  <style>
-    .use-cases-header {
-      background: linear-gradient(135deg, rgba(6, 66, 94, 0.03) 0%, rgba(0, 189, 227, 0.02) 100%);
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 1.5rem 0;
-      border-left: 4px solid var(--nist-accent);
-    }
-
-    .use-cases-header h1 {
-      color: var(--nist-blue);
-      margin-top: 0;
-    }
-
-    .use-cases-header p {
-      color: var(--gray-dark);
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    .use-cases-section {
-      background: var(--white);
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      margin: 2rem 0;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .use-cases-section:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border-color: rgba(0, 189, 227, 0.2);
-    }
-
-    .use-cases-section-title {
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, rgba(6, 66, 94, 0.03) 0%, rgba(0, 189, 227, 0.02) 100%);
-      padding: 1.5rem 2rem;
-      color: var(--nist-blue);
-      font-size: 1.5rem;
-      font-weight: 600;
-      border-bottom: none;
-      gap: 1rem;
-    }
-
-    .use-cases-section-number {
-      background: var(--nist-accent);
-      color: white;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
-
-    .use-cases-section-icon {
-      font-size: 1.75rem;
-      flex-shrink: 0;
-    }
-
-    .use-cases-section-content {
-      padding: 2rem;
-    }
-
-    .use-cases-section-content p {
-      color: var(--gray-dark);
-      line-height: 1.7;
-      margin-bottom: 1.25rem;
-    }
-
-    .use-cases-section-content p:last-child {
-      margin-bottom: 0;
-    }
-
-    .use-cases-section-content strong {
-      color: var(--nist-blue);
-    }
-
-    .use-cases-section-content em {
-      color: var(--gray-dark);
-      font-style: italic;
-    }
-
-    .use-cases-section:nth-child(even) {
-      background: linear-gradient(180deg, var(--white) 0%, rgba(6, 66, 94, 0.01) 100%);
-    }
-
-    .use-cases-section:nth-child(odd) {
-      background: var(--white);
-    }
-
-    @media (max-width: 768px) {
-      .use-cases-section-title {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-      }
-
-      .use-cases-section-content {
-        padding: 1.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .use-cases-section-title {
-        padding: 1.25rem 1.5rem;
-      }
-
-      .use-cases-section-number {
-        width: 2rem;
-        height: 2rem;
-      }
-
-      .use-cases-section-icon {
-        font-size: 1.5rem;
-      }
-
-      .use-cases-section-title {
-        font-size: 1.25rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -309,7 +181,7 @@
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
   </script>
-  <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+  <p class="font-sans-sm text-center improve-page-wrapper"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>

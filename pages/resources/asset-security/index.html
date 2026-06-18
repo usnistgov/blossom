@@ -57,7 +57,7 @@
               information, organizations can more effectively integrate vendor-supplied security data into automated assessment, authorization, and continuous compliance processes while ensuring a consistent interpretation of asset security requirements.
             </p>
             <br>
-            <p class="highlight-box" style="text-align: center; background-color: #f0f8ff; padding: 15px; border-radius: 8px; border-left: 4px solid #00bde3;">
+            <p class="highlight-box highlight-box-custom">
               This <a href="../oscal/index.html#managing-secure-configuration-and-controls-satisfaction-with-oscal">section</a> dives into more details about how the OSCAL Component Definition model is utilized with BloSS@M.
             </p>
           </div>
@@ -212,7 +212,7 @@
               maintain ongoing visibility into security risks associated with software.
             </p>
             <p>
-              BloSS@M incorporates the <strong style="color: var(--nist-blue);">Common Vulnerabilities and Exposures (CVE)</strong> program and the <strong style="color: var(--nist-blue);">National Vulnerability Database (NVD)</strong>, along with automated mechanisms for retrieving their data. Together, these capabilities support 
+              BloSS@M incorporates the <strong class="text-nist-blue">Common Vulnerabilities and Exposures (CVE)</strong> program and the <strong class="text-nist-blue">National Vulnerability Database (NVD)</strong>, along with automated mechanisms for retrieving their data. Together, these capabilities support
               scalable, up-to-date analysis of vulnerabilities across all managed software assets.
             </p>
             <div class="section-divider"></div>
@@ -230,7 +230,7 @@
             
             <div class="section-divider"></div>
             
-            <h2 style="text-align:center">Automated Vulnerability Detection Using NVD Data</h2>
+            <h2 class="text-center">Automated Vulnerability Detection Using NVD Data</h2>
             <br>
             <p>
               The NVD offers publicly available application programming interfaces (APIs) that allow automated access to vulnerability data. These APIs support structured searches using parameters such as CVE IDs, CPE names, vendors, products, and software versions. 
@@ -350,21 +350,16 @@
   <script src="../../../assets/js/load-sidenav.js"></script>
   <script src="../../../assets/js/uswds.min.js"></script>
 
-  <!-- Accordion functionality -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const accordionHeaders = document.querySelectorAll('.accordion-header');
 
       accordionHeaders.forEach(header => {
         header.addEventListener('click', function() {
-          // Toggle active class on the header
           this.classList.toggle('active');
-
-          // Find the associated content
           const content = this.nextElementSibling;
 
           if (content) {
-            // Toggle active class on content
             content.classList.toggle('active');
           }
         });
@@ -377,7 +372,7 @@
     var lastModifiedDate = new Date(date);
     document.getElementById("updated").innerHTML = "This page was last updated on: " + lastModifiedDate;
  </script>
- <p class="font-sans-sm text-center" style="margin:1.5rem auto"><button
+ <p class="font-sans-sm text-center margin-auto-vertical"><button
       id=main-improve-page
       onclick='window.location.href="https://github.com/usnistgov/blossom/blob/nist-pages/index.html"'
       class="usa-button usa-button--accent-cool">Improve this Page</button>
